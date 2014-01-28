@@ -1,6 +1,0 @@
-Jan 25, 2014 3:22:04 PM  (DBQuery) SELECT * FROM ENTITYATTRIBUTE WHERE (1=1)  AND ( OWNERTYPE = 6 and OWNERID = 36 AND VERSION = 1 and attributeDefId = 164 and attributeDefSubId = 0 ) ORDER BY NDX ASC
-Jan 25, 2014 3:22:04 PM  (Info)    DBTableObject.executeQuery() - SELECT * FROM ENTITYATTRIBUTE WHERE (1=1)  AND ( OWNERTYPE = 6 and OWNERID = 36 AND VERSION = 1 and attributeDefId = 164 and attributeDefSubId = 0 ) ORDER BY NDX ASC
-Jan 25, 2014 3:22:04 PM  (Trace)   1 records found.
-Jan 25, 2014 3:22:04 PM  (DBQuery) SELECT * FROM ENTITYATTRIBUTE WHERE (1=1)  AND ( OWNERTYPE = 6 and OWNERID = 26 AND VERSION = 1 and attributeDefId = 164 and attributeDefSubId = 0 ) ORDER BY NDX ASC
-Jan 25, 2014 3:22:04 PM  (Info)    DBTableObject.executeQuery() - SELECT * FROM ENTITYATTRIBUTE WHERE (1=1)  AND ( OWNERTYPE = 6 and OWNERID = 26 AND VERSION = 1 and attributeDefId = 164 and attributeDefSubId = 0 ) ORDER BY NDX ASC
-Jan 25, 2014 3:22:04 PM  (Trace)   0 records found.

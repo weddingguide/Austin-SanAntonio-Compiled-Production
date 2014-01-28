@@ -16,12 +16,12 @@
    </div>
 </x:forEach>
 <x:if select="$doc/WGBE/region/categories/category/@usePortalPage='true'">
-                        <span><a href="<x:out select="$doc/WGBE/region/categories/category/@url"/>"><img src="/img/arrow_pink.png" /> Back to Portal</a></span>
+    <span><a href="<x:out select="$doc/WGBE/region/categories/category/@url"/>"><img src="/img/arrow_pink.png" /> Back to Portal</a></span>
 </x:if>   
 <br />
-                <x:if select="$doc/WGBE/region/categories/category/profileSets/@paginate='true'">
-                        <x:forEach select="$doc/WGBE/region/categories/category/profileSets/profileSet" var="profileSet">
-                                <span><img src="/img/arrow_pink.png" /> <a href="?noportal=true&page=<x:out select="$profileSet/@id"/>">Page <x:out select="$profileSet/@id"/></a></span>
-                        </x:forEach>
-                </x:if>
+<x:if select="$doc/WGBE/region/categories/category/profileSets/@paginate='true'">
+        <x:forEach select="$doc/WGBE/region/categories/category/profileSets/profileSet" var="profileSet">
+                <span><img src="/img/arrow_pink.png" /> <a href="?noportal=true&page=<x:out select="$profileSet/@id"/>">Page <x:out select="$profileSet/@id"/></a></span>
+        </x:forEach>
+</x:if>
 
