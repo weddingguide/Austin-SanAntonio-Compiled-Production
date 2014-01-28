@@ -1,0 +1,18 @@
+input {
+  border: none !important;
+  outline: none !important;
+  background-color: transparent !important;
+}
+#go,
+#print,
+#reset,
+#pdf,
+#email,
+.question-tooltip,
+.tips-show,
+.tips-hide,
+.tips,
+#collapse-all,
+#expand-all {
+  display: none !important;
+}

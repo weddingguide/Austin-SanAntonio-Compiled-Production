@@ -1,0 +1,132 @@
+{
+	"categories":[
+		
+		{
+			"name": "Venues",
+			"tips": "Some tips about venues",
+			"percent": 0.35,
+			"items": ["Rehearsal Dinner","Ceremony Dinner","Reception Site"],
+			"add": true,
+			"per_person": false
+		
+		},
+		{
+			"name": "Catering",
+			"tips": "Some tips about catering",
+			"percent": 0.25,
+			"items": ["Beverage & Bartenders","Food & Service"],
+			"add": true,
+			"per_person": true
+		
+		},
+		{
+			"name": "Dress & Attire",
+			"tips": "Some tips about Dress & Attire",
+			"percent": 0.08,
+			"items": ["Wedding Dress","Tuxedo","Bride's Accessories","Groom's Accessories"],
+			"add": true,
+			"per_person": false
+		
+		},
+		{
+			"name": "Flowers & Decorations",
+			"tips": "Some tips about Flowers & Decorations",
+			"percent": 0.05,
+			"items": ["Reception Decorations","Boutonnieres, Corsages","Bridal Bouquetes","Bridesmaid Bouquets"],
+			"add": true,
+			"per_person": false
+		
+		},
+		{
+			"name": "Music",
+			"tips": "Some tips about Music",
+			"percent": 0.05,
+			"items": ["Band/DJ","Ceremony Musicians"],
+			"add": true,
+			"per_person": false
+		
+		},
+		{
+			"name": "Invitations",
+			"tips": "Some tips about Invitations",
+			"percent": 0.02,
+			"items": ["Ceremony Programs","Guest Book","Invitations & Reply Cards"],
+			"add": true,
+			"per_person": false
+		
+		},
+		{
+			"name": "Jewelry",
+			"tips": "Some tips about Jewelry",
+			"percent": 0.02,
+			"items": ["Engagement Ring","Wedding Bands"],
+			"add": true,
+			"per_person": false
+		
+		},
+		{
+			"name": "Cake",
+			"tips": "Some tips about Cake",
+			"percent": 0.02,
+			"items": ["Cake & Cutting Fee"],
+			"add": true,
+			"per_person": false
+		
+		},
+		{
+			"name": "Planning",
+			"tips": "Some tips about Planning",
+			"percent": 0.02,
+			"items": ["Wedding Planner"],
+			"add": true,
+			"per_person": false
+		
+		},
+		{
+			"name": "Transportation",
+			"tips": "Some tips about Transportation",
+			"percent": 0.02,
+			"items": ["Limo or Car Rental","Parking"],
+			"add": true,
+			"per_person": false
+		
+		},
+		{
+			"name": "Beauty & Health",
+			"tips": "Some tips about Beauty & Health",
+			"percent": 0.01,
+			"items": ["Hair & Makeup"],
+			"add": true,
+			"per_person": false
+		
+		},
+		{
+			"name": "Favor & Gifts",
+			"tips": "Some tips about Favor & Gifts",
+			"percent": 0.01,
+			"items": ["Gifts"],
+			"add": true,
+			"per_person": false
+		
+		},
+		{
+			"name": "Officiant",
+			"tips": "Some tips about Officiant",
+			"percent": 0.01,
+			"items": ["Officiant"],
+			"add": true,
+			"per_person": false
+		
+		},
+		{
+			"name": "Miscellaneous",
+			"tips": "Some tips about Miscellaneous",
+			"percent": 0.02,
+			"items": [],
+			"add": true,
+			"per_person": false
+		
+		}
+	]
+
+}

@@ -1,0 +1,3 @@
+Jan 25, 2014 11:19:39 PM  (DBQuery) SELECT * FROM ENTITYATTRIBUTE WHERE (1=1)  AND ( OWNERTYPE = 6 and OWNERID = 10 AND VERSION = 1 and attributeDefId = 164 and attributeDefSubId = 0 ) ORDER BY NDX ASC
+Jan 25, 2014 11:19:39 PM  (Info)    DBTableObject.executeQuery() - SELECT * FROM ENTITYATTRIBUTE WHERE (1=1)  AND ( OWNERTYPE = 6 and OWNERID = 10 AND VERSION = 1 and attributeDefId = 164 and attributeDefSubId = 0 ) ORDER BY NDX ASC
+Jan 25, 2014 11:19:39 PM  (Trace)   0 records found.

@@ -1,0 +1,1518 @@
+/* --------------------------------------------
+   HTML5 Doctor Reset
+-------------------------------------------- */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 14px;}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {display: block;}
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content: ""; content: none; }
+ins { background-color: #ff9; color: #000; text-decoration: none; }
+mark { background-color: #ff9; color: #000; font-style: italic; font-weight: bold; }
+del { text-decoration: line-through; }
+abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
+table { border-collapse: collapse; border-spacing: 0; }
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+input, select { vertical-align: middle; }
+body { /*font:13px/1.231 sans-serif; *font-size:small; */}
+select, input, textarea, button { font:90% sans-serif; }
+pre, code, kbd, samp { font-family: monospace, sans-serif; }
+html { overflow-y: scroll; }
+a:hover, a:active { outline: none; }
+ul, ol { margin-left: 2em; }
+ol { list-style-type: decimal; }
+nav ul, nav li { margin: 0; list-style:none; list-style-image: none; }
+small { font-size: 85%; }
+strong, th { font-weight: bold; }
+td { vertical-align: top; }
+sub, sup { font-size: 75%; line-height: 0; position: relative; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; padding: 15px; }
+textarea { overflow: auto; } 
+.ie6 legend, .ie7 legend { margin-left: -7px; } 
+input[type="radio"] { vertical-align: text-bottom; }
+input[type="checkbox"] { vertical-align: bottom; }
+.ie7 input[type="checkbox"] { vertical-align: baseline; }
+.ie6 input { vertical-align: text-bottom; }
+label, input[type="button"], input[type="submit"], input[type="image"], button { cursor: pointer; }
+button, input, select, textarea { margin: 0; }
+input:valid, textarea:valid   {  }
+input:invalid, textarea:invalid { border-radius: 1px; -moz-box-shadow: 0px 0px 5px red; -webkit-box-shadow: 0px 0px 5px red; box-shadow: 0px 0px 5px red; }
+.no-boxshadow input:invalid, .no-boxshadow textarea:invalid { background-color: #f0dddd; }
+::-moz-selection{ background: #000; color:#fff; text-shadow: none; }
+::selection { background:#000; color:#fff; text-shadow: none; }
+a:link { -webkit-tap-highlight-color: #FF5E99; }
+button {  width: auto; overflow: visible; }
+.ie7 img { -ms-interpolation-mode: bicubic; }
+body, select, input, textarea { color: #444; }
+h1, h2, h3, h4, h5, h6 { font-weight: bold;  line-height: 1em !important;}
+h1 {font-family: 'Open Sans Condensed', sans-serif;}
+.clearfix { clear:both; float:none; margin:0; padding:0;}
+.hide {display:none;}
+/* --------------------------------------------
+   Primary Styles
+-------------------------------------------- */
+body { background: #fff; font-family: 'Open Sans', sans-serif; color: #252525; text-align: center; }	
+	a { color: #016797; text-decoration: none; }
+	a:hover { text-decoration: underline; }
+	#container { width: 960px; margin: 15px auto 5px; padding:0; text-align: left; box-shadow: 0 0 5px 2px #ccc; }	
+		header { overflow: hidden; clear: both; margin-bottom: 0px; }
+			header hgroup { float: left; padding:0px;}
+				header hgroup img { margin:0 10px; max-width:100%;}	
+				header hgroup h1 { font-family: 'Open Sans Condensed', sans-serif; font-size: 2em; color:#016797; text-align:center; }
+			.branding { width:75.0%; background:url(../img/watermark_atx.jpg) no-repeat; height:146px; padding:0; margin-right:3px; }
+				.branding img { float:left; }
+				.branding .header-book a:nth-child(2) img { margin-top:25px; }
+				.branding .header-book {float:right; width:31%; margin:15px; display:none;}
+			.search { float:right; width:24.6%; text-align: center; background:url(../img/flower_white_vert_UL.png) top left no-repeat #e8ecf2; height:165px; padding:8px 0; }
+				.search h3 {font-weight: normal;}
+				.search select { width:210px; height:20px; padding:0;}
+				.search input[type="text"]{margin:0 !important; width:170px !important; height:20px; padding:0;}
+				.search input[type="submit"]{-webkit-appearance: none; width:25px; height:25px; padding:0; border-radius:25px; background:#016797; color:white; border:0; font-weight: normal; text-align: center; }
+				.search input[type="submit"]:hover { font-weight: bold; }
+		header nav { float: left; margin: 3px 3px 3px 0; width:75%;}
+			header nav ul { margin: 0; padding: 0; overflow: hidden; background: #016797; }
+				header nav ul li { list-style: none; float: left; display: inline; margin:0; padding: 6px 0px; font-family: 'Open Sans', sans-serif; font-size: 14px;}
+				header nav ul li:last-child { border: 0; }
+					header nav ul li a { display: block; padding: 0 8px; white-space: nowrap;	color: #fff; text-decoration: none;	border-right:1px solid white; }
+					header nav ul li:last-child a { border:0px; }
+					header nav ul li a:hover { text-decoration: underline; }
+					header nav #pull { display:none;}		
+		#content { float: left; width: 720px; vertical-align: top;}
+			#content .slider-container {height:360px;}
+ 			#content .registration { margin:3px 0 0 0; vertical-align: top; height:90px;}
+ 			#content .registration a { vertical-align: top; }
+ 		#sidebar { float: right; width: 24.6%; margin:0; padding:0; height:auto;}		
+		footer { clear: both; padding:0 0 10px; background:url(../img/footerbg.png) bottom center repeat-x #016797; height:auto; }
+			footer .site-map {float:left; width:45%; margin:0; padding:20px 0 0 20px; color:white;}
+			footer .site-map img {float:left; margin:0 15px 40px 0;}
+				footer .site-map nav ul { margin: 0; padding: 0; }
+					footer .site-map nav ul li { list-style: none; display: inline-block; margin:3px 0; }
+					footer .site-map nav ul li a { color:white; line-height: 1.15em; border-right:1px solid white; padding: 0 5px 0 0;}
+					footer .site-map nav ul li:last-child a {border-right:0;}
+				footer .site-map .social-media { margin:10px 0 0 100px; padding:0; }
+				footer .site-map .social-media li { list-style: none; display: inline-block; }
+				footer .site-map .social-media li img {margin:0; padding:0;}
+			footer .more-info { float:right; width:49%; margin:0; padding:20px 10px 0 20px; color:white; }
+			footer .more-info a {color:white;}
+			footer .more-info img { float:left; margin:0 15px 40px 0; }
+				footer .more-info nav {margin:0 0 15px 0;}	
+				footer .more-info nav ul { margin: 0; padding: 0; }
+					footer .more-info nav ul li { list-style: none; display: inline; margin:5px 0; }
+					footer .more-info nav ul li a { color:white; line-height: 1.15em; border-right:1px solid white; padding: 0 5px 0 0;}
+					footer .more-info nav ul li:last-child a {border-right:0;}
+/* --------------------------------------------
+   Photo Gallery Styles
+-------------------------------------------- */
+/* mwuSlider */
+.wmuSlider {position: relative; overflow: hidden;}
+	.wmuSlider .wmuSliderWrapper {display: none;}
+		.wmuSlider .wmuSliderWrapper article {position: relative; text-align: center;}
+			.wmuSlider .wmuSliderWrapper article img {max-width: 100%; width: auto; height: auto;}
+/* mwuGallery */
+.wmuGallery .wmuGalleryImage {position: relative; text-align: center;}
+	.wmuGallery .wmuGalleryImage img {max-width: 100%; width: auto; height: auto;}
+/* Default Skin */
+.wmuGallery .wmuGalleryImage {margin-bottom: 10px;}
+.wmuSliderPrev, .wmuSliderNext {position: absolute; width: 40px; height: 80px; text-indent: -9999px; background: url(../img/sprites.png) no-repeat 0 0; top: 50%; margin-top: -40px; z-index: 2;}
+.wmuSliderPrev {background-position: 100% 0; left: 20px;}
+.wmuSliderNext {right: 20px;}
+.wmuSliderPagination {z-index: 2; position: absolute; left: 20px; bottom: 10px; margin:0 auto;}
+	.wmuSliderPagination li {float: left; margin: 0 5px 0 0; list-style-type: none;}
+	.wmuSliderPagination a {display: block; text-indent: -9999px; width: 10px; height: 10px; background: url(../img/sprites.png) no-repeat 0 -80px;}
+		.wmuSliderPagination a.wmuActive {background-position: -10px -80px;}
+/* --------------------------------------------
+	Audio Player Styles	Desktop				
+-------------------------------------------- */
+/*jplayer */
+.profile-audio div.jp-single-player, .profile-audio div.jp-playlist-player {margin: 0 auto;}
+.profile-audio div.jp-single-player, .profile-audio div.jp-playlist-player {font-size:1em; font-family: Arial, Helvetica, sans-serif; line-height:1.6; color: #e7e7e3;}
+.profile-audio div.jp-interface	{position: relative; background: url("../img/jplayer.png") repeat-x 0 -264px; width:418px; height:80px; border:2px solid #ffffff;}
+.profile-audio div.jp-single-player div.jp-interface {border-bottom:none;}
+.profile-audio div.jp-interface ul.jp-controls {list-style-type:none; padding:0; margin: 0;}
+.profile-audio div.jp-interface ul.jp-controls li {position: absolute;}
+.profile-audio div.jp-interface ul.jp-controls a {position: absolute; overflow:hidden; text-indent:-9999px;}
+.profile-audio a.jp-play, .profile-audio a.jp-pause {top:20px; width:40px; height:40px;}
+.profile-audio div.jp-single-player a.jp-play, .profile-audio div.jp-single-player a.jp-pause {left:40px;}
+.profile-audio div.jp-playlist-player a.jp-play, .profile-audio div.jp-playlist-player a.jp-pause {left:48px;}
+.profile-audio a.jp-play {background: url("../img/jplayer.png") 0 0 no-repeat;}
+.profile-audio a.jp-play:hover {background: url("../img/jplayer.png") -41px 0 no-repeat;}
+.profile-audio a.jp-pause {background: url("../img/jplayer.png") 0 -42px no-repeat; display: none;}
+.profile-audio a.jp-pause:hover	{background: url("../img/jplayer.png") -41px -42px no-repeat;}
+.profile-audio a.jp-stop {top:26px; background: url("../img/jplayer.png") 0 -83px no-repeat; width:28px; height:28px;}
+.profile-audio div.jp-single-player a.jp-stop {left:90px;}
+.profile-audio div.jp-playlist-player a.jp-stop {left:126px;}
+.profile-audio a.jp-stop:hover {background: url("../img/jplayer.png") -29px -83px no-repeat;}
+.profile-audio a.jp-previous {left:20px; top:26px; background: url("../img/jplayer.png") 0 -112px no-repeat; width:28px; height:28px;}
+.profile-audio a.jp-previous:hover {background: url("../img/jplayer.png") -29px -112px no-repeat;}
+.profile-audio a.jp-next {left:88px; top:26px; background: url("../img/jplayer.png") 0 -141px no-repeat; width:28px; height:28px;}
+.profile-audio a.jp-next:hover {background: url("../img/jplayer.png") -29px -141px no-repeat;}
+.profile-audio div.jp-progress {position: absolute; overflow:hidden; top:32px; width:122px; height:15px;}
+.profile-audio div.jp-single-player div.jp-progress	{left:130px;}
+.profile-audio div.jp-playlist-player div.jp-progress {left:164px;}
+.profile-audio div.jp-load-bar {background: url("../img/jplayer.png") 0 -202px repeat-x; width:0px; height:15px; cursor: pointer;}
+.profile-audio div.jp-play-bar {background: url("../img/jplayer.png") 0 -218px repeat-x; width:0px; height:15px;}
+.profile-audio a.jp-volume-min {top:32px; background: url("../img/jplayer.png") 0 -170px no-repeat; width:10px; height:15px;}
+.profile-audio div.jp-single-player a.jp-volume-min {left:274px;}
+.profile-audio div.jp-playlist-player a.jp-volume-min {left:296px;}
+.profile-audio a.jp-volume-min:hover {background: url("../img/jplayer.png") -19px -170px no-repeat;}
+.profile-audio a.jp-volume-max {top:32px; background: url("../img/jplayer.png") 0 -186px no-repeat; width:18px; height:15px;}
+.profile-audio div.jp-single-player a.jp-volume-max {left:346px;}
+.profile-audio div.jp-playlist-player a.jp-volume-max {left:368px;}
+.profile-audio a.jp-volume-max:hover {background: url("../img/jplayer.png") -19px -186px no-repeat;}
+.profile-audio div.jp-volume-bar {position: absolute; overflow:hidden; top:37px; background: url("../img/jplayer.png") 0 -250px repeat-x; width:46px; height:5px; cursor: pointer;}
+.profile-audio div.jp-single-player div.jp-volume-bar {left:292px;}
+.profile-audio div.jp-playlist-player div.jp-volume-bar {left:314px;}
+.profile-audio div.jp-volume-bar-value {background: url("../img/jplayer.png") 0 -256px repeat-x; width:0px; height:5px;}
+.profile-audio div.jp-play-time, .profile-audio div.jp-total-time {position: absolute; top:49px; width:122px; font-size:.64em; font-style:oblique;}
+.profile-audio div.jp-total-time {text-align: right;}
+.profile-audio div.jp-single-player div.jp-play-time, .profile-audio div.jp-single-player div.jp-total-time {left:130px;}
+.profile-audio div.jp-playlist-player div.jp-play-time, .profile-audio div.jp-playlist-player div.jp-total-time {left:164px;}
+.profile-audio div.jp-playlist {width:422px;}
+.profile-audio div.jp-playlist ul {list-style-type:none; margin:0; padding:0px; background: url("../img/jplayer.png") repeat-x 0 -343px; border:2px solid #ffffff; border-top:none; width:418px; font-size:.75em; text-align: left;}
+.profile-audio div.jp-playlist ul li a:link, .profile-audio div.jp-playlist ul li a:visited {color: #ffffff; margin: 20px 0px; text-decoration: none; font-size: 12px;}
+.profile-audio .jp-single-player .jp-playlist ul li {border-bottom: none; font-size: 11px; padding: 5px 20px 8px 0px; text-align: center;}
+.profile-audio .jp-playlist ul li {padding:7px 0 5px 20px; font-weight:bold; border-bottom: 1px dotted #ffffff;}
+.profile-audio div.jp-playlist-player div.jp-playlist li {padding:5px 0 4px 20px;}
+.profile-audio div.jp-playlist-player div.jp-playlist li.jplayer_playlist_item_last {padding:5px 0 5px 20px;}
+.profile-audio div.jp-playlist-player div.jp-playlist li.jplayer_playlist_current {list-style-type:square; list-style-position:inside; padding-left:12px;}
+.profile-audio div.jp-playlist-player div.jp-playlist a {text-decoration: none;}
+.profile-audio div.jp-progress { background-color: #cee2ec; color: #384349;}
+	::-moz-selection { background: #437fa2; color: #cee2ec;text-shadow: none;}
+	::selection {background: #437fa2;color: #cee2ec;text-shadow: none;}
+.profile-audio div.jp-playlist-player div.jp-playlist a:hover, .profile-audio div.jp-playlist-player div.jp-playlist a.jplayer_playlist_current {color: #0b3045;}
+.profile-audio div.jp-playlist ul li {background: #609cbf; background: linear-gradient(top, #609cbf 0%,#397495 100%);}
+.profile-audio div.jp-playlist-player div.jp-playlist a:hover, .profile-audio div.jp-playlist-player div.jp-playlist a.jplayer_playlist_current	{color: #0b3045;}
+
+/* --------------------------------------------
+	Audio Player Styles	Mobile				
+-------------------------------------------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px), only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation : landscape), only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait), only screen and (min-device-width : 320px) and (max-device-width : 480px), only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape), only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) {
+.profile-audio div.jp-single-player, .profile-audio div.jp-playlist-player {font-size:2em;}
+.profile-audio div.jp-interface	{position: relative; background: url("../img/jplayer.png") no-repeat 0 -264px #3a7698; width:100%;}
+.profile-audio div.jp-playlist-player a.jp-play, .profile-audio div.jp-playlist-player a.jp-pause {left:70px;}
+.profile-audio a.jp-next {left:130px;}
+.profile-audio div.jp-playlist-player div.jp-progress {left:270px;}
+.profile-audio div.jp-playlist-player div.jp-play-time, .profile-audio div.jp-playlist-player div.jp-total-time {left:270px;}
+.profile-audio div.jp-playlist-player div.jp-volume-bar {left:500px;}
+.profile-audio div.jp-playlist-player a.jp-volume-min {left:480px;}
+.profile-audio div.jp-playlist-player a.jp-volume-max {left:555px;}
+.profile-audio div.jp-play-time, .profile-audio div.jp-total-time {width:200px;}
+.profile-audio div.jp-playlist ul {margin:0 0 0 -14px !important; padding:0px; width:100%;}
+.profile-audio div.jp-playlist {width:100%;}
+
+}
+
+/* --------------------------------------------
+	Video Player Styles	Mobile				
+-------------------------------------------- */
+#video_logo {display:none !important;}
+
+/* --------------------------------------------
+	Video Player Styles	Mobile				
+-------------------------------------------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px), only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation : landscape), only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait), only screen and (min-device-width : 320px) and (max-device-width : 480px), only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape), only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) {
+.jwplayer {width:100% !important;}
+}
+
+/* --------------------------------------------
+   Home Page Styles Desktop
+-------------------------------------------- */		
+		.featured-vendors { background:url(../img/flower_white_vert_LR.png) right bottom no-repeat #f5f5f5; height:auto; text-align: center; }
+		.featured-vendors img {margin:10px 0 17px 0;}
+			.featured-vendors div { width:100%; margin:1px 0 0; padding:0; text-align: left; height:55px; clear:both;}
+				.featured-vendors div img {float:left; margin:0 3px 0 0; background:#ccc;}
+				.featured-vendors div h3 {text-align: left; font-size:1em; line-height:1em !important; max-height:2em; overflow:hidden;}
+				.featured-vendors div h3 a { color:black; }
+				.featured-vendors div p { text-align: left; margin:0 auto; font-size: 0.8em; line-height: 2em;}	
+		.promo-blocks { height: 500px; background:#f5f5f5;}
+			.promo-blocks .promo1 {background:#f5f5f5; height:249px; margin:3px 0 0 0;}
+			.promo-blocks .promo1 p { text-align: center; }
+		.bridal-blog { float:left; width:24.6%; margin:3px 3px 0 0; background:#F5F5F5; text-align:center;  padding: 0 10px 5px; max-height:500px; height:500px;}
+			.bridal-blog img { margin:10px 0 0; vertical-align:middle;}
+			.bridal-blog div { text-align: left; margin:5px auto; clear:both; width:180px;}
+				.bridal-blog div img { margin: 5px 0 !important; }
+			.bridal-blog a { color:#d9a09f; }
+			.bridal-blog a:hover{ text-decoration: none; font-weight: bold; }
+			.bridal-blog h3 { text-align: left; margin:5px 0;}
+				.bridal-blog h3 a { color:black; }
+				.bridal-blog h3 a:hover {text-decoration: underline;}	
+			.bridal-blog p { text-align: left; font-size: .85em;}
+				.bridal-blog p a {color:black; font-weight: bold;}
+				.bridal-blog p a:hover {text-decoration: underline;}
+		.special-offers { float:left; width:48%; margin:3px 3px 0 0; background:url(../img/flower_white_horiz_UL.png) no-repeat top left #e8ecf2; padding:0px;	text-align: center;	height:250px;}
+		.special-offers div { float:left; text-align: left; margin:5px; overflow:hidden; width:220px; height:95px;}
+			.special-offers div img { float:left; margin: 0 5px 35px 0;}
+			.special-offers div p {padding: 0 0 10px; font-size: .9em;}
+			.special-offers div h3 { overflow:hidden; line-height: 1em; max-height:3em;}
+		.special-title { color:black; font-size:1.5em;}
+			.special-title span { color:#016797; text-transform: uppercase;}		
+		.shows-events {	float:left; width:48%; margin:4px 3px 0 0; background:url(../img/flower_grey_horiz_LR.png) no-repeat bottom right #fff; padding:0; text-align: center; max-height:250px; height:250px;}
+			.shows-events div { float:left; text-align: left; margin:5px; overflow:hidden; width:220px; height:105px;}
+				.shows-events div img { float:left; margin: 0 5px 40px 0;}
+				.shows-events div p {padding: 0 0 10px; font-size: .9em;}
+				.shows-events div h3 { overflow:hidden; line-height: 1em; max-height: 3em;}
+		.events-title { color:black; font-size:1.5em;}
+			.events-title span { color:#d9a09f; text-transform: uppercase;}	
+
+/* --------------------------------------------
+  Home Page Styles Tablet in portrait
+-------------------------------------------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 1){
+	#container { width: 100%; }
+		.branding { width:75.0%; background:url(../img/watermark_atx_960.jpg) top left no-repeat; max-height:159px; padding:0; margin-right:3px; }
+			.branding img { max-width:55%;}
+			.branding div.header-book {width:35%;}
+		header nav ul li a {padding:0 0.7em;}
+		#content { width: 100%; }
+			#content .slider-container {height:512px;}
+						.slider {width: 100% !important; height:512px !important; }
+							.slider img {width:100%; height:512px;}
+						.as-nav {width: 100% !important; top:-150px;}
+		#content .registration { height:auto; }
+			#content .registration img {width:100%; height:auto;}		
+		#sidebar {float:right; margin:5px 0 0 0; width:590px;}
+			.featured-vendors{float:right; margin:0; width:365px;}
+				.featured-vendors img {margin:7px 0;}
+				.featured-vendors div {width:98%;}
+			.promo-blocks {float:left; width:220px; max-width:220px; margin:0; max-height:440px; height:440px; overflow:hidden;}
+				.promo-blocks .promo1 {width:220px; margin:0 0 5px 0; height:220px; overflow:hidden;}
+		.bridal-blog {width:365px; height:440px; margin:5px 0; padding:0 10px;}
+		.special-offers {float:none; clear:both; width:96%; height:200px; padding:0 20px;}
+		.shows-events {float:none; clear:both; width:96%; height: 200px; padding:0 20px;}		
+		footer {height:auto;}
+		footer .site-map{clear:both; float:none; width:98%;}
+		footer .more-info{clear:both; float:none; width:98%;}
+}
+
+/* --------------------------------------------
+  Home Page Styles Mobile
+-------------------------------------------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px), only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation : landscape), only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait), only screen and (min-device-width : 320px) and (max-device-width : 480px), only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape), only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) {
+	.banners a img{ width:100%; height:auto;}
+	.banners a:nth-child(2) {display:none;}
+	#container {width:100%;}
+		.branding {background:#fff; text-align: center; height:auto; margin:0 auto; width:100%; max-height: inherit;}
+	    	.branding img {max-width:100%; margin:0 auto; float:none; width:100%;}
+		.search {float:none; clear:both; width:100%; padding:10px 0; height:auto;}
+			.search h1 {font-size:6em;}
+			.search h3 {font-size: 3em;}
+			.search form select {font-size:3em; width:50%; height:auto !important;}
+			.search input[type=text] {font-size:3em; height:auto !important; width:auto !important;}
+			.search input[type=submit] {width:80px; height:80px; font-size:3em; border-radius: 45px;}
+		.header-book {display:none;}
+		header nav { float: none; clear: both; width:100%; margin:0; }
+			header nav ul {display:none;}
+			header nav a#pull { display: block; background-color: #016797; width: 100%; position: relative; color:white; text-align: center; font-size: 4em !important; border-bottom:1px solid white; line-height:2em; }  
+			header nav a#pull:after { content:""; background: url('../img/nav-icon.png') no-repeat; width: 50px; height: 50px; display: inline-block; position: absolute; text-align: center; margin:0 10px; top: 50px; }
+				header nav ul li { float: none; display: block; width: 100%; text-align: left; border-bottom: 1px solid white; font-size: 2em;}
+					header nav ul li:last-child { width: 100%; border-bottom: 0; }
+					header nav ul li a { padding: 10px; border:0px; font-size: 2em; line-height: 1.5em;}
+	#content { width: 100%; }
+		#content .slider-container {height:auto !important;}
+					.slider {width: 100% !important; height:512px; }
+						.slider img {width:100%; height:512px; }
+					.as-nav {width: 100% !important; top:-50px;}
+					.ad-slider-inner {height:auto;}
+				.registration {height:auto !important;}
+					.registration img {max-width: 100%; width:100%; height:auto;}
+		#sidebar {width:100%; display:block;}
+				.featured-vendors{float:none; clear:both; margin:0; padding:10px; height: auto; width:98%;}
+					.featured-vendors>:first-child {width:50%; height:auto;}
+					.featured-vendors div {height:150px; margin:5px 0; width:100% !important;}
+					.featured-vendors div h3 {font-size: 3em;}
+					.featured-vendors div p {font-size:3em;}
+					.featured-vendors div img{width:150px; height:auto;}
+				.promo-blocks {display:none;}
+		.bridal-blog { width:98%; float:none; clear:both; padding:10px; height:auto; display:inline-block; max-height:inherit;}
+			.bridal-blog div {width:500px; font-size:3em; line-height:1em;}
+				.bridal-blog div a img {width:3em;}
+			.bridal-blog>:first-child {width:50%; height:auto;}
+			.bridal-blog h3 {font-size: 3em; line-height: 1em;}
+			.bridal-blog h3 small {font-size: .7em;}
+			.bridal-blog h3:before {content:"~ ";}
+			.bridal-blog p {font-size: 3em; margin:0 1em 0 0; line-height: 1em;}
+		.special-offers {height:auto; padding:0 10px; width:98%; display:inline-block; clear:both; float:none; max-height:inherit;}
+			.special-offers h1 {padding:20px 0; font-size: 5em;}
+				.special-offers h1 span {font-size: 1em;}
+			.special-offers div { float:none; clear:both; height:auto; width:100%;}
+				.special-offers div h3 {width:100%; white-space: normal; overflow: visible; font-size: 3em;}
+				.special-offers div img {width:150px; height:auto; margin:0 5px 150px 0;}
+				.special-offers div img:after {content:".";clear:both;}
+				.special-offers div p {font-size: 1.8em; line-height: 1em;}
+		.shows-events {height:auto; padding:0 10px; width:98%; display:inline-block; clear:both; float:none; max-height:inherit;}
+			.shows-events h1 {padding:20px 0; font-size: 5em;}
+				.shows-events h1 span {font-size: 1em;}
+			.shows-events div {float:none; clear:both; height:auto; width:100%;}
+				.shows-events div h3 {width:100%; white-space:normal; overflow:visible; font-size: 3em;}
+				.shows-events div img {width:150px; height:auto; margin:0 5px 150px 0;}
+				.shows-events div img:after {content:".";clear:both;}
+				.shows-events div p {font-size: 1.8em; line-height: 1em;}
+	footer .site-map {width:98%;}
+	footer strong {font-size: inherit;}
+		footer .site-map nav ul li {font-size: 2em;}	
+		footer .site-map img {margin:0 15px 70px 0;}	
+	footer .more-info {width:98%;}
+		footer .more-info nav ul li {font-size:2em;}
+		footer .more-info p { font-size: 2em; line-height: 1em;}
+		footer .more-info img {margin:0 15px 130px 0;}
+}
+
+/* --------------------------------------------
+  Category Page Styles Desktop
+-------------------------------------------- */
+#content.category { width:100%;}
+	.featuredVendors { width:100%; margin:0 auto; max-height:157px;}
+		.featuredVendors div {float:left; width:150px; height:150px; background:#ccc; margin:3px 5px;}
+			.featuredVendors div img {width:150px; height:150px;}
+			.featuredVendors div span { background: url(../img/featuredvendors_bg.png); width:146px; height:30px; color:white; text-align: center; display:block; padding:2px; z-index:1000; position:relative; overflow: hidden; text-overflow:ellipsis; white-space:pre-wrap; bottom:34px; line-height:1em;}
+	.category-info { width:100%;}
+		.category-info h1 {color:#016797; font-size:2em; margin:3px 10px; clear:both;}
+		.category-info div {margin:0; clear:both;}
+		.category-info div span {margin:10px;}
+			.category-info div span img {vertical-align: top;}
+			.category-info div span a {color:#d9a09f;}
+		.category-info p {clear:both; float:none; margin: 10px;}
+	.vendor-container { margin:0 10px;}
+		.vendor-container .vendor-entry {float:left; width:50%; height:150px; background:#f5f5f5; margin:5px 0; overflow:hidden;}
+						.vendor-entry:nth-child(4n+3), .vendor-entry:nth-child(4n+4) {background:#fff;}
+						.vendor-entry a img {float:left; padding:0; margin:0 10px 0 0; height:150px; width:150px;}
+						.vendor-entry h3 { margin:10px 0; font-size: 1em;}
+						.vendor-entry h3 a {color:black;}
+						.vendor-entry .more-link {color:#016797; margin:10px 10px;}
+						.vendor-entry .more-link i {display:none;}
+/* --------------------------------------------
+  Category Page Styles Tablet in landscape
+-------------------------------------------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 1){
+	.featuredVendors div {width:153px; height:153px;}
+		.featuredVendors div img {width:153px; height:153px;}
+		.featuredVendors div span {width:153px;}
+}		
+
+/* --------------------------------------------
+  Category Page Styles Tablet in portrait
+-------------------------------------------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 1){
+/* Matches landscape styles */
+}
+
+/* --------------------------------------------
+  Category Page Styles Mobile
+-------------------------------------------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px), only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation : landscape), only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait), only screen and (min-device-width : 320px) and (max-device-width : 480px), only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape), only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) {
+	.featuredVendors {display:none;}
+		.featuredVendors img {width:90%; height:auto;}
+	.category-info h1 {font-size:6em; font-weight: bold;}
+	.category-info div {width:99%;}
+		.category-info div span {font-size:2.5em; display:list-item;}
+		.category-info div span img {width:6%; height:auto; vertical-align: middle;}
+	.category-info p {font-size:2.5em; line-height:1em;}
+		.category-info p b {font-size: inherit;}
+		.category-info p strong {font-size:inherit;}
+		.category-info p em {font-size:inherit;}
+	.vendor-container .vendor-entry {float:none; width:100%; background:#f6f5f6; height:205px;}
+	.vendor-container .vendor-entry:nth-child(even) {background:white;}
+		.vendor-entry a img { height:200px; width:200px;}
+		.vendor-entry h3 {font-size:3em; position:absolute; left:220px; width:70%;}
+			.vendor-entry h3 a {margin:0; padding:0;}
+		.vendor-entry p:first-of-type {font-size: 2.5em; margin: 2.6em 0 0; line-height: 1em; float:left;}
+		.vendor-entry .more-link {font-size: 2em; margin: 2em 10px; float: right; width: 80px; height: 80px; background: #016797; position: absolute; border-radius: 40px; right: 20px; z-index:1000;}
+		.vendor-entry .more-link a span{display:none;}
+		.vendor-entry .more-link a i {position:relative; color:white; color: white; font-size: 3em; font-style:normal; line-height: 0.9em; padding: 0 0 0 19px;}
+		.vendor-entry .more-link i {display:block;}
+}
+
+/* --------------------------------------------
+  Profile Page Styles Desktop
+-------------------------------------------- */
+#content.profile{width:100%; background:#f5f5f5;}
+	.profile-container {width:75.5%; float:left; background:white;}
+	.profileInfo {}
+		.profileInfo img {float:left; width:150px; height:150px; margin:0 10px; padding:0;}
+		.profileInfo h1 {font-size: 1.5em; color:#016797; clear:right;}
+		.profileInfo div.profileFeatures a{display:none; color:#d9a09f; line-height: 15px; margin:8px 10px;  width:49%;}
+		.profileInfo div.profileFeatures a img {height:16px; width:16px; margin:0; vertical-align: top; }
+		.profileInfo div.breadCrumbs {}
+		.profileInfo div.breadCrumbs a { color:#d9a09f; line-height: 15px; display:inline-block;}
+		.profileInfo div.breadCrumbs a img {height:16px; width:16px; margin:0 4px; vertical-align: top; }
+		.profileInfo div.address {margin:10px; float:left;}
+		.profileInfo .fb-like {clear:both; margin:5px 10px;}
+	.profileDescription {clear:both; padding:0 10px;}
+		.profileDescription p {margin:0 0 1em 0;}
+	.profile-container hr { width:90%; margin:20px auto;}
+	.profileMedia {padding: 0 10px 10px;}
+		.profileMedia h2 {font-size: 1.75em; color:#016797;}
+	aside.profile-nav {width:23%; background:#f5f5f5; text-align: center; float:right; padding:10px 5px;}
+		 ul.profileNavigation { list-style: none; margin:0; padding:0;}
+		 .profileNavigation li { margin:10px auto; width:200px; height:29px; box-shadow: 0 3px 3px 2px #ccc; border-radius: 25px; text-indent: 45px; text-align: left;}
+		 .profileNavigation li a {line-height: 29px; color:black; font-weight: bold;}
+			.website {background:url(../img/icons_profilefeat.jpg) 10px -1px no-repeat white;}
+			.email {background:url(../img/icons_profilefeat.jpg) 10px -31px no-repeat white;}
+			.map {background:url(../img/icons_profilefeat.jpg) 10px -61px no-repeat white;}
+			.details {background:url(../img/icons_profilefeat.jpg) 10px -91px no-repeat white;}
+			.testimonials {background:url(../img/icons_profilefeat.jpg) 10px -121px no-repeat white;}
+			.events {background:url(../img/icons_profilefeat.jpg) 10px -151px no-repeat white;}
+			.specials {background:url(../img/icons_profilefeat.jpg) 10px -181px no-repeat white;}
+			.photos {background:url(../img/icons_profilefeat.jpg) 10px -211px no-repeat white;}
+			.videos {background:url(../img/icons_profilefeat.jpg) 10px -241px no-repeat white;}
+			.virtual-tour {background:url(../img/icons_profilefeat.jpg) 10px -271px no-repeat white;}
+			.facebook {background:url(../img/icons_profilefeat.jpg) 10px -301px no-repeat white;}
+			.twitter {background:url(../img/icons_profilefeat.jpg) 10px -331px no-repeat white;}
+			.pinterest {background:url(../img/icons_profilefeat.jpg) 10px -361px no-repeat white;}
+			.googleplus {background:url(../img/icons_profilefeat.jpg) 10px -391px no-repeat white;}
+			.instagram {background:url(../img/icons_profilefeat.jpg) 10px -421px no-repeat white;}
+			.blog {background:url(../img/icons_profilefeat.jpg) 10px -451px no-repeat white;}
+			.linkedin {background:url(../img/icons_profilefeat.jpg) 10px -481px no-repeat white;}
+			.myspace {background:url(../img/icons_profilefeat.jpg) 10px -511px no-repeat white;}
+			.audio {background:url(../img/icons_profilefeat.jpg) 10px -541px no-repeat white;}
+
+/* --------------------------------------------
+  Profile Page Styles Tablet in landscape
+-------------------------------------------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 1){/* Matches desktop styles */}
+
+/* --------------------------------------------
+  Profile Page Styles Tablet in portrait
+-------------------------------------------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 1){/* Matches landscape styles */}
+
+/* --------------------------------------------
+  Profile Page Styles Mobile
+-------------------------------------------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px), only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation : landscape), only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait), only screen and (min-device-width : 320px) and (max-device-width : 480px), only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape), only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) {
+	.profile-container {width:100%; float:none;}
+		.profileInfo img {float:none; width:75%; height:auto; margin:10px 12%;}
+		.profileInfo h1 {font-size: 5em; margin:5px 10px; float:none;}
+		.profileInfo div.profileFeatures {}
+			.profileInfo div.profileFeatures a {display:inline-block; font-size:3em; line-height: 25px; width:100%;}
+				.profileInfo div.profileFeatures a img { width:25px; height:auto;}
+		.profileInfo div.breadCrumbs {float:left; width:50%;}
+			.profileInfo div.breadCrumbs a {font-size:3em; line-height: 25px; width:100%; margin:8px 10px;}
+				.profileInfo div.breadCrumbs a img {width:25px; height:auto;}
+		.profileInfo div.address {font-size: 3em;}
+		.profileInfo .fb-like {display:none;}
+		.profileDescription {margin:10px 0; font-size: 2em;}
+			.profileMedia h2 {font-size: 2em;}
+				.wmuSlider .wmuSliderWrapper {display:block !important;}
+					.wmuSlider .wmuSliderWrapper article img { width:100%; }
+	aside.profile-nav {width:100%; float:none; margin:10px 0; padding:0;}
+		.profile-nav img {width: 50%; height:auto;}
+		.profileNavigation li { width:50%; height:60px; text-indent: 85px;}
+			.profileNavigation li a {line-height: 45px;}
+				.profileNavigation li.website {background:url(../img/icons_profilefeat-hi.jpg) 15px 6px no-repeat white;}
+				.profileNavigation li.email {background:url(../img/icons_profilefeat-hi.jpg) 15px -45px no-repeat white;}
+				.profileNavigation li.map {background:url(../img/icons_profilefeat-hi.jpg) 15px -95px no-repeat white;}
+				.profileNavigation li.details {background:url(../img/icons_profilefeat-hi.jpg) 15px -147px no-repeat white;}
+				.profileNavigation li.testimonials {background:url(../img/icons_profilefeat-hi.jpg) 15px -195px no-repeat white;}
+				.profileNavigation li.events {background:url(../img/icons_profilefeat-hi.jpg) 15px -247px no-repeat white;}
+				.profileNavigation li.specials {background:url(../img/icons_profilefeat-hi.jpg) 15px -297px no-repeat white;}
+				.profileNavigation li.photos {background:url(../img/icons_profilefeat-hi.jpg) 15px -348px no-repeat white;}
+				.profileNavigation li.videos {background:url(../img/icons_profilefeat-hi.jpg) 15px -395px no-repeat white;}
+				.profileNavigation li.virtual-tour {background:url(../img/icons_profilefeat-hi.jpg) 15px -445px no-repeat white;}
+				.profileNavigation li.facebook {background:url(../img/icons_profilefeat-hi.jpg) 15px -496px no-repeat white;}
+				.profileNavigation li.twitter {background:url(../img/icons_profilefeat-hi.jpg) 15px -543px no-repeat white;}
+				.profileNavigation li.pinterest {background:url(../img/icons_profilefeat-hi.jpg) 15px -596px no-repeat white;}
+				.profileNavigation li.googleplus {background:url(../img/icons_profilefeat-hi.jpg) 15px -645px no-repeat white;}
+				.profileNavigation li.instagram {background:url(../img/icons_profilefeat-hi.jpg) 15px -694px no-repeat white;}
+				.profileNavigation li.blog {background:url(../img/icons_profilefeat-hi.jpg) 15px -748px no-repeat white;}
+				.profileNavigation li.linkedin {background:url(../img/icons_profilefeat-hi.jpg) 15px -796px no-repeat white;}
+				.profileNavigation li.myspace {background:url(../img/icons_profilefeat-hi.jpg) 15px -845px no-repeat white;}
+				.profileNavigation li.audio {background:url(../img/icons_profilefeat-hi.jpg) 15px -900px no-repeat white;}
+}
+
+/* --------------------------------------------
+  Profile Page Contact Form Styles Desktop
+-------------------------------------------- */
+legend {margin:15px 0; font-size: 1.25em; font-weight: bold;}
+fieldset {margin: 10px 0 25px; text-align: left; border: none;}
+fieldset label {display: block; font-weight: bold; text-align: right; width: 175px; line-height: 35px; float: left; clear:left;}
+fieldset input {float: left; font-size: 1em; padding: 1px; width: 195px; margin: 2px 0px 20px 10px;}
+fieldset select {float: left; font-size: 1em; padding: 0px; width: 202px; margin: 2px 0 20px 10px;}
+fieldset textarea {float: left; font-size: 1em; width:70%; padding: 0px; margin: 2px 0px 20px 10px;}
+.tool-tip {display:none; float:right; position:relative; margin: -2px 80px 0 0; background: #FFCC99; padding: 5px; border: 1px solid #555;}
+
+/* --------------------------------------------
+  Profile Page Contact Form Styles Tablet in landscape
+-------------------------------------------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 1){/* Matches desktop styles */}
+
+/* --------------------------------------------
+  Profile Page Contact Form Styles Tablet in portrait
+-------------------------------------------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 1){/* Matches landscape styles */}
+
+/* --------------------------------------------
+  Profile Page Contact Form Styles Mobile
+-------------------------------------------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px), only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation : landscape), only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait), only screen and (min-device-width : 320px) and (max-device-width : 480px), only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape), only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) {
+legend { font-size:3em;}
+fieldset label {font-size:2em; }
+fieldset input {font-size:2em; width:70%;}
+fieldset select {font-size: 2em; width:70%;}
+form button {font-size: 2em;}
+}
+
+/* --------------------------------------------
+  Profile Page Details Styles Desktop
+-------------------------------------------- */
+.profileDetails p:first-of-type {width:100%; display: block; background:#e8ecf2; text-align: center; padding:10px;}
+	.profileDetails p a {color:black;}
+.profileDetails ul {list-style: none; margin:10px;}
+	.profileDetails ul li {width:100%; height:55px;}
+		.profileDetails ul li span {display:inline-block; padding:5px; text-indent: 45px; color:black; line-height: 2em;}
+	.profileDetails li.brideDressingRoom {background:url(../img/icons_150ppi.png)no-repeat 0px -84px}
+	.profileDetails li.ceremonySite {background:url(../img/icons_150ppi.png)no-repeat 0px 0px;}
+	.profileDetails li.indoorOnly {background:url(../img/icons_150ppi.png)no-repeat 0px -168px;}
+	.profileDetails li.outdoorOnly {background:url(../img/icons_150ppi.png)no-repeat 0px -252px;}
+	.profileDetails li.bothInOutdoor {background:url(../img/icons_150ppi.png)no-repeat 0px -336px;}
+	.profileDetails li.inHouseCateringOnly {background:url(../img/icons_150ppi.png)no-repeat 0px -420px;}
+	.profileDetails li.inHouseLiquorOnly {background:url(../img/icons_150ppi.png)no-repeat 0px -504px;}
+	.profileDetails li.gardenPatio {background:url(../img/icons_150ppi.png)no-repeat 0px -588px;}
+	.profileDetails li.danceFloor {background:url(../img/icons_150ppi.png)no-repeat 0px -672px;}
+	.profileDetails li.bandsDj {background:url(../img/icons_150ppi.png)no-repeat 0px -756px;}
+	.profileDetails li.canProvideCake {background:url(../img/icons_150ppi.png)no-repeat 0px -840px;}
+	.profileDetails li.valetParking {background:url(../img/icons_150ppi.png)no-repeat 0px -924px;}
+	.profileDetails li.freeParking {background:url(../img/icons_150ppi.png)no-repeat 0px -1008px;}
+	.profileDetails li.securityRequired {background:url(../img/icons_150ppi.png)no-repeat 0px -1092px;}
+	.profileDetails li.virtualTour {background:url(../img/icons_150ppi.png)no-repeat 0px -1176px;}
+	/*Accomodations*/
+	.profileDetails li.discountRoom {background:url(../img/iconsprite_42_150ppi.png)no-repeat 0px 0px;}
+	.profileDetails li.suitesAvailable {background:url(../img/iconsprite_42_150ppi.png)no-repeat 0px -84px;}
+	.profileDetails li.kitchenettes {background:url(../img/iconsprite_42_150ppi.png)no-repeat 0px -168px;}
+	.profileDetails li.meetingRoom {background:url(../img/iconsprite_42_150ppi.png)no-repeat 0px -252px;}
+	.profileDetails li.breakfastIncluded {background:url(../img/iconsprite_42_150ppi.png)no-repeat 0px -336px;}
+	.profileDetails li.handicapRoom {background:url(../img/iconsprite_42_150ppi.png)no-repeat 0px -420px;}
+	.profileDetails li.swimmingPool {background:url(../img/iconsprite_42_150ppi.png)no-repeat 0px -504px;}
+	.profileDetails li.airportShuttle {background:url(../img/iconsprite_42_150ppi.png)no-repeat 0px -588px;}
+	.profileDetails li.businessCenter {background:url(../img/iconsprite_42_150ppi.png)no-repeat 0px -672px;}
+	.profileDetails li.freeWifi {background:url(../img/iconsprite_42_150ppi.png)no-repeat 0px -756px;}
+	.profileDetails li.freeParking {background:url(../img/iconsprite_42_150ppi.png)no-repeat 0px -840px;}
+	.profileDetails li.petFriendly {background:url(../img/iconsprite_42_150ppi.png)no-repeat 0px -924px;}
+	.profileDetails li.restaurantsNear {background:url(../img/iconsprite_42_150ppi.png)no-repeat 0px -1008px;}
+	.profileDetails li.fitnessCenter {background:url(../img/iconsprite_42_150ppi.png)no-repeat 0px -1092px;}
+	.profileDetails li.north {background:url(../img/iconsprite_42_150ppi.png)no-repeat 0px -1176px;}
+	.profileDetails li.northEast {background:url(../img/iconsprite_42_150ppi.png)no-repeat 0px -1260px;}
+	.profileDetails li.northWest {background:url(../img/iconsprite_42_150ppi.png)no-repeat 0px -1344px;}
+	.profileDetails li.south {background:url(../img/iconsprite_42_150ppi.png)no-repeat 0px -1428px;}
+	.profileDetails li.southEast {background:url(../img/iconsprite_42_150ppi.png)no-repeat 0px -1512px;}
+	.profileDetails li.southWest {background:url(../img/iconsprite_42_150ppi.png)no-repeat 0px -1596px;}
+	.profileDetails li.east {background:url(../img/iconsprite_42_150ppi.png)no-repeat 0px -1680px;}
+	.profileDetails li.west {background:url(../img/iconsprite_42_150ppi.png)no-repeat 0px -1764px;}
+	.profileDetails li.central {background:url(../img/iconsprite_42_150ppi.png)no-repeat 0px -1848px;}
+	.profileDetails li.downtown {background:url(../img/iconsprite_42_150ppi.png)no-repeat 0px -1932px;}
+	.profileDetails li.nearRiver {background:url(../img/iconsprite_42_150ppi.png)no-repeat 0px -2016px;}
+	.profileDetails li.near6th {background:url(../img/iconsprite_42_150ppi.png)no-repeat 0px -2100px;}
+
+/* --------------------------------------------
+  Profile Page Details Styles Tablet in landscape
+-------------------------------------------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 1){/* Matches desktop styles */}
+
+/* --------------------------------------------
+  Profile Page Details Styles Tablet in portrait
+-------------------------------------------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 1){/* Matches landscape styles */}
+
+/* --------------------------------------------
+  Profile Page Details Styles Mobile
+-------------------------------------------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px), only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation : landscape), only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait), only screen and (min-device-width : 320px) and (max-device-width : 480px), only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape), only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) {
+ .profileMedia ul li {font-size: 2em;}
+}
+
+/* --------------------------------------------
+  Profile Page Map Styles Desktop
+-------------------------------------------- */
+.profileMedia iframe {width: 684px; margin:10px auto; height:484px; background: #ccc;}
+
+/* --------------------------------------------
+  Profile Page Map Styles Tablet in landscape
+-------------------------------------------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 1){/* Matches desktop styles */}
+
+/* --------------------------------------------
+  Profile Page Map Styles Tablet in portrait
+-------------------------------------------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 1){/* Matches landscape styles */}
+
+/* --------------------------------------------
+  Profile Page Map Styles Mobile
+-------------------------------------------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px), only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation : landscape), only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait), only screen and (min-device-width : 320px) and (max-device-width : 480px), only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape), only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) {
+	.profileMedia iframe {width:100%;}
+}
+
+/* --------------------------------------------
+  Profile Page Events Styles Desktop
+-------------------------------------------- */
+.profileMedia .event-container {background:#e8ecf2; display:inline-block; width:100%; clear:both; margin:5px auto;}
+.profileMedia .event-container:nth-child(odd){background:white;}
+	.event-container h2 {font-size:1em; color:black; margin:1px 10px;}
+	.event-container p {width:auto; padding:10px; text-align:left; background:inherit;}
+/* --------------------------------------------
+  Profile Page Events Styles Tablet in landscape
+-------------------------------------------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 1){/* Matches desktop styles */}
+
+/* --------------------------------------------
+  Profile Page Events Styles Tablet in portrait
+-------------------------------------------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 1){/* Matches landscape styles */}
+
+/* --------------------------------------------
+  Profile Page Events Styles Mobile
+-------------------------------------------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px), only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation : landscape), only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait), only screen and (min-device-width : 320px) and (max-device-width : 480px), only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape), only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) {
+	.event-container h2 {font-size:2em;}
+	.event-container p {font-size: 1.75em;}
+}
+
+/* --------------------------------------------
+  Profile Page Specials Styles Desktop
+-------------------------------------------- */
+.profileMedia .special-container {background:#e8ecf2; display:inline-block; width:100%; clear:both; margin:5px auto;}
+.profileMedia .special-container:nth-child(odd){background:white;}
+	.special-container h2 {font-size:1em; color:black; margin:1px 10px;}
+		.special-container h2 em {font-size: 0.9em; font-style:italic; float:right; font-weight: normal;}
+	.special-container p {width:auto !important; padding:10px !important; text-align:left !important; background:inherit !important;}
+/* --------------------------------------------
+  Profile Page Specials Styles Tablet in landscape
+-------------------------------------------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 1){/* Matches desktop styles */}
+
+/* --------------------------------------------
+  Profile Page Specials Styles Tablet in portrait
+-------------------------------------------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 1){/* Matches landscape styles */}
+
+/* --------------------------------------------
+  Profile Page Specials Styles Mobile
+-------------------------------------------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px), only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation : landscape), only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait), only screen and (min-device-width : 320px) and (max-device-width : 480px), only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape), only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) {
+	.special-container h2 {font-size:2em;}
+		.special-container h2 em {font-size: 0.9em;}
+	.special-container p {font-size: 1.75em;}
+}
+
+/* --------------------------------------------
+  Profile Page Video Styles Desktop
+-------------------------------------------- */
+.profileMedia .video-container {background:#e8ecf2; display:inline-block; width:100%; clear:both; margin:5px auto;}
+.profileMedia .video-container:nth-child(odd){background:white;}
+	.video-container h2 {font-size:1em; color:black; margin:1px 10px;}
+	.video-container p {width:auto !important; padding:10px !important; text-align:left !important; background:inherit !important;}
+/* --------------------------------------------
+  Profile Page Video Styles Tablet in landscape
+-------------------------------------------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 1){/* Matches desktop styles */}
+
+/* --------------------------------------------
+  Profile Page Video Styles Tablet in portrait
+-------------------------------------------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 1){/* Matches landscape styles */}
+
+/* --------------------------------------------
+  Profile Page Video Styles Mobile
+-------------------------------------------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px), only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation : landscape), only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait), only screen and (min-device-width : 320px) and (max-device-width : 480px), only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape), only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) {
+	.video-container h2 {font-size:2em;}
+	.video-container p {font-size: 1.75em;}
+	.video-container iframe {}
+}
+
+/* --------------------------------------------
+  Profile Page Audio Styles Desktop
+-------------------------------------------- */
+.profileMedia .audio-container {background:#e8ecf2; display:inline-block; width:100%; clear:both; margin:5px auto;}
+.profileMedia .audio-container:nth-child(odd){background:white;}
+	.audio-container h2 {font-size:1em; color:black; margin:1px 10px;}
+	.audio-container p {width:auto !important; padding:10px !important; text-align:left !important; background:inherit !important;}
+/* --------------------------------------------
+  Profile Page Audio Styles Tablet in landscape
+-------------------------------------------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 1){/* Matches desktop styles */}
+
+/* --------------------------------------------
+  Profile Page Audio Styles Tablet in portrait
+-------------------------------------------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 1){/* Matches landscape styles */}
+
+/* --------------------------------------------
+  Profile Page Audio Styles Mobile
+-------------------------------------------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px), only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation : landscape), only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait), only screen and (min-device-width : 320px) and (max-device-width : 480px), only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape), only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) {
+	.audio-container h2 {font-size:2em;}
+	.audio-container p {font-size: 1.75em;}
+}
+
+/* --------------------------------------------
+  Profile Page Virtual Tour Styles Desktop
+-------------------------------------------- */
+.profileMedia .virtualTour-container {background:#e8ecf2; display:inline-block; width:100%; clear:both; margin:5px auto;}
+.profileMedia .virtualTour-container:nth-child(odd){background:white;}
+	.virtualTour-container h2 {font-size:1em; color:black; margin:1px 10px;}
+	.virtualTour-container p {width:auto !important; padding:10px !important; text-align:left !important; background:inherit !important;}
+/* --------------------------------------------
+  Profile Page Virtual Tour Styles Tablet in landscape
+-------------------------------------------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 1){/* Matches desktop styles */}
+
+/* --------------------------------------------
+  Profile Page Virtual Tour Styles Tablet in portrait
+-------------------------------------------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 1){/* Matches landscape styles */}
+
+/* --------------------------------------------
+  Profile Page Virtual Tour Styles Mobile
+-------------------------------------------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px), only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation : landscape), only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait), only screen and (min-device-width : 320px) and (max-device-width : 480px), only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape), only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) {
+	.virtualTour-container h2 {font-size:2em;}
+	.virtualTour-container p {font-size: 1.75em;}
+}
+
+/* --------------------------------------------
+  Events Page Styles Desktop
+-------------------------------------------- */
+#content.event { width:100%;}
+.event-info { width:100%;}
+		.event-info h1 {float:left; color:#016797; font-size:2em; margin:3px 5px 3px 10px;}
+		.event-info div {margin:14px 0 10px 10px; clear:both;}
+		.event-info div a {color:#d9a09f; }
+		.event-info div a span {line-height:15px; margin:10px;}
+			.event-info div span img {vertical-align: top;}
+		.event-info p {clear:both; float:none; margin: 10px;}
+
+.event-container {}
+	.event-listing {background:#fff; display:inline-block; padding:10px;} 
+	.event-listing:nth-child(odd) {background:#F5F5F5;}
+	.event-listing img { width:150px; height:150px; float:left;}
+	.event-listing .eventInfo {float:left; width:780px; margin:0 0 0 10px;}
+	.event-listing .eventInfo a h2 {color:black;}
+	.event-listing .eventInfo p:first-of-type {font-weight: bold; margin:0;}
+	.event-listing .eventInfo em:first-of-type {font-style: italic;}
+/*	.event-listing .eventInfo p {margin:0 0 1em 0;}*/
+	.event-listing .eventInfo a {font-weight: bold;}
+
+/* --------------------------------------------
+  Events Page Styles Tablet in landscape
+-------------------------------------------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 1){
+	.event-listing .eventInfo {width:795px;}
+}
+
+/* --------------------------------------------
+  Events Page Styles Tablet in portrait
+-------------------------------------------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 1){/* Matches landscape styles */}
+
+/* --------------------------------------------
+  Events Page Styles Mobile
+-------------------------------------------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px), only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation : landscape), only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait), only screen and (min-device-width : 320px) and (max-device-width : 480px), only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape), only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) {
+	.event-info h1 { font-size: 4em;} 
+	.event-info div { margin:45px 0 10px 10px;}
+	.event-info div span img { vertical-align: middle; width:20%; float:left; height:auto;}
+	.event-info div span {font-size:3em; line-height: 0.5em; padding:0 0 0 12px; margin:0;}
+	.event-info p {font-size: 14px;}
+}
+
+/* --------------------------------------------
+  Specials Page Styles Desktop
+-------------------------------------------- */
+#content.special { width:100%;}
+.special-info { width:100%;}
+		.special-info h1 {float:left; color:#016797; font-size:2em; margin:3px 5px 3px 10px;}
+		.special-info div {margin:14px 0 10px 10px; clear:both;}
+			.special-info div a {color:#d9a09f; }
+			.special-info div a span {line-height:15px; margin:10px;}
+				.special-info div span img {vertical-align: top;}
+		.special-info p {clear:both; float:none; margin: 10px;}
+
+.special-container {}
+	.special-listing {background:#fff; display:inline-block; padding:10px;} 
+	.special-listing:nth-child(odd) {background:#F5F5F5;}
+	.special-listing img { width:150px; height:150px; float:left;}
+	.special-listing .specialInfo {float:left; width:780px; margin:0 0 0 10px;}
+	.special-listing .specialInfo a h2 {color:black;}
+	.special-listing .specialInfo p:first-of-type {font-weight: bold; margin:0;}
+	.special-listing .specialInfo em:first-of-type {font-style: italic;}
+/*	.special-listing .specialInfo p {margin:0 0 1em 0;}*/
+	.special-listing .specialInfo a {font-weight: bold;}
+/* --------------------------------------------
+  Specials Page Styles Tablet in landscape
+-------------------------------------------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 1){
+	.special-listing .specialInfo {width:795px;}
+}
+
+/* --------------------------------------------
+  Specials Page Styles Tablet in portrait
+-------------------------------------------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 1){/* Matches landscape styles */}
+
+/* --------------------------------------------
+  Specials Page Styles Mobile
+-------------------------------------------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px), only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation : landscape), only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait), only screen and (min-device-width : 320px) and (max-device-width : 480px), only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape), only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) {
+	.special-info h1 { font-size: 4em;} 
+	.special-info div { margin:45px 0 10px 10px;}
+	.special-info div span img { vertical-align: middle; width:20%; float:left; height:auto;}
+	.special-info div span {font-size:3em; line-height: 0.5em; padding:0 0 0 12px; margin:0;}
+	.special-info p {}
+}
+
+/* --------------------------------------------
+  Category Portal Page Styles Desktop
+-------------------------------------------- */
+#content.portal { width:100%;}
+	.portal .portal-info {float:left; width:74.4%; overflow:hidden; margin:0 10px 0 0;}
+		.portal-info>img {float:left; width:200px; height:200px; background:#ccc; margin:3px 0;}
+		.portal-info>div {float:left; margin:10px; width:68.4%;}
+			.portal-info>div h1 {font-size: 2em; color:#016797;}
+			.portal-info>div span {display:inline-block; clear:both; height:2em; padding:0;}
+				.portal-info>div span a {color:#d9a09f;}
+	.portal .portal-siteTools {float:left; width:74%; max-height:100px; overflow:hidden; border:2px dotted #e8ecf2; margin:0 10px 0 0;}
+		.portal-siteTools img {float:left; width:200px; height:100px;}
+		.portal-siteTools ul {margin:10px 20px; float:left; list-style:none;}
+	.portal .portal-blog {text-align: center;}
+		.portal-blog img {margin:10px auto;}
+		.portal-blog h3 {font-size: 1.2em; font-weight: bold;}
+		.portal-blog ul {text-align: left; list-style: none; margin:0;}
+			.portal-blog ul li {margin:10px 0; font-weight: bold; font-size: .9em;}
+				.portal-blog ul li a {color:black;}
+	.portal .portal-featuredVendors {width:100%; clear:both;}
+		.portal-featuredVendors h1 {color:#016797; font-size:2em; padding:0 0 0 10px;}
+		.portal-featuredVendors>span {clear:both; height:2em; padding:0 0 0 10px;}
+			.portal-featuredVendors>span img {margin: 0 5px 0 0;}
+			.portal-featuredVendors>span a {color:#d9a09f;}
+		.portal-vendorList {background:#f5f5f5; display: inline-block;}
+			.portal-vendorList div {float:left; width:150px; height:150px; background:#ccc; margin:3px 5px;}
+				.portal-vendorList div img {width:150px; height:150px;}
+				.portal-vendorList div span { background: url(../img/featuredvendors_bg.png); width:146px; height:35px; color:white; text-align: center; display:block; padding:2px; z-index:1000; position:relative; overflow: hidden; white-space:pre-wrap; bottom:44px; }
+/* --------------------------------------------
+  Category Portal Page Styles Tablet in landscape
+-------------------------------------------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 1){
+	.portal-info>img {display:none;}
+	.portal-info>div {width:90%;}
+	.portal-vendorList div span { background: url(../img/featuredvendors_bg.png); width:146px; height:55px; color:white; text-align: center; display:block; padding:2px; z-index:1000; position:relative; overflow: hidden; text-overflow:ellipsis; white-space:pre-wrap; bottom:64px; }
+}
+
+/* --------------------------------------------
+  Category Portal Page Styles Tablet in portrait
+-------------------------------------------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 1){/* Matches landscape styles */}
+
+/* --------------------------------------------
+  Category Portal Page Styles Mobile
+-------------------------------------------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px), only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation : landscape), only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait), only screen and (min-device-width : 320px) and (max-device-width : 480px), only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape), only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) {
+	.portal .portal-info {width:100%; clear:both; margin:0;}
+		.portal-info>img {display:none;}
+		.portal-info>div {width:99%;}
+			.portal-info>div h1 {font-size:4em; float:none;}
+			.portal-info>div span {padding:0; font-size: 2em; width:60%;}
+				.portal-info>div span a img {width:5%; height:auto;}
+	.portal .portal-siteTools {width:99%; margin:0; border:5px dotted #e8ecf2; max-height:inherit; text-align: center;}
+		.portal-siteTools>a {width:100%; background: #e8ecf2; display:inline-block; text-align: center;}
+			.portal-siteTools a img {width:60%; height:auto;}
+		.portal-siteTools ul {font-size:2em; margin:10px 17px;}
+			.portal-siteTools ul li {margin:20px 0;}
+				.portal-siteTools ul li a {display:block; background:#e8ecf2; padding:10px 9px;}
+	.portal .portal-blog {width:100%;}
+		.portal-blog a img {width:60%;}
+		.portal-blog ul {margin:0 2em;}
+	.portal-featuredVendors h1 {font-size: 4em; float:none;}
+	.portal-featuredVendors span {font-size:2em; padding:0; width:70%; float:none; clear:both; display:inline-block; margin:0 10px;}
+	.portal-featuredVendors span a img {width:5%;}
+	.portal-vendorList div {width:40%; height:392px; margin:3em;}
+		.portal-vendorList div img {width:100%; height:auto;}
+		.portal-vendorList div span {width:99%; height:80px; bottom:-287px; margin:0;}
+}
+
+/* --------------------------------------------
+  Planning Tools Page Styles Desktop
+-------------------------------------------- */
+#content.planning-tools{ width:100%;}
+	.pt-info {width:100%;}
+		.pt-info h1 {font-size: 2em; color:#016797; clear:both; margin:3px 10px;}
+		.pt-info div span {margin:10px;}
+			.pt-info div span a {color:#d9a09f; }
+		.pt-info p {clear:both; float:none; margin:3px 10px;}
+	.planning-tools .pt-container {margin:10px; text-align: center; background:#f5f5f5; display:inline-block;}
+		.pt-container .tool-block {float:left; margin:20px; display:inline-block; width:270px; height:235px;}
+					.tool-block>a {color:black;}
+					.tool-block a h1 { font-size: 1.3em;  text-indent:85px; }
+					.tool-block a h1.wGuide {background:url(../img/pltools_icons.png) no-repeat 60px -1px; text-align: left;}
+					.tool-block a h1.iGallery {background:url(../img/pltools_icons.png) no-repeat 60px -40px; text-align: left;}
+					.tool-block a h1.aPage {background:url(../img/pltools_icons.png) no-repeat 60px -80px; text-align: left;}
+					.tool-block a h1.cLists {background:url(../img/pltools_icons.png) no-repeat 60px -120px; text-align: left;}
+					.tool-block a h1.vDirectory {background:url(../img/pltools_icons.png) no-repeat 60px -160px; text-align: left;}
+					.tool-block a h1.bCalculator {background:url(../img/pltools_icons.png) no-repeat 60px -200px; text-align: left;}
+					.tool-block a h1.gSearch {background:url(../img/pltools_icons.png) no-repeat 60px -241px; text-align: left;}
+					.tool-block a img {margin:5px 0 10px;}
+/* --------------------------------------------
+  Planning Tools Page Styles Tablet
+-------------------------------------------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 1){
+	.pt-info h1 {font-size: 2em !important;}
+	.pt-info p { font-size: 1em;}
+	.pt-info div span {padding:20px 10px 0 !important; font-size: 1.2em !important;}
+		.pt-info div span a img {width:3% !important;}
+	.planning-tools .pt-container {margin:10px; text-align: center; background:#f5f5f5; display:inline-block;}
+		.pt-container .tool-block {float:left; margin:20px; display:inline-block; width:270px !important; height:275px !important;}		
+			.pt-container .tool-block p {font-size: 1em !important;}
+			.tool-block>a {color:black;}
+				.tool-block a h1 { text-indent:85px;}
+				.tool-block a h1.wGuide {background:url(../img/pltools_icons.png) no-repeat 60px -1px !important;}
+				.tool-block a h1.iGallery {background:url(../img/pltools_icons.png) no-repeat 60px -40px !important;}
+				.tool-block a h1.aPage {background:url(../img/pltools_icons.png) no-repeat 60px -80px !important;}
+				.tool-block a h1.cLists {background:url(../img/pltools_icons.png) no-repeat 60px -120px !important;}
+				.tool-block a h1.vDirectory {background:url(../img/pltools_icons.png) no-repeat 60px -160px !important;}
+				.tool-block a h1.bCalculator {background:url(../img/pltools_icons.png) no-repeat 60px -200px !important;}
+				.tool-block a h1.gSearch {background:url(../img/pltools_icons.png) no-repeat 65px -241px !important;}
+}
+
+/* --------------------------------------------
+  Planning Tools Page Styles Mobile
+-------------------------------------------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px), only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation : landscape), only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait), only screen and (min-device-width : 320px) and (max-device-width : 480px), only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape), only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) {
+	.pt-info h1 {font-size: 6em; color:#016797; font-weight: bold;}
+	.pt-info div span {font-size: 2.5em;}
+		.pt-info div span a img {width:5%; height:auto;}
+	.pt-info p { font-size: 2.5em; line-height: 1em;}
+	.pt-container .tool-block {width:45%; height:625px;}
+		.pt-container .tool-block p {font-size: 2.5em; line-height: 1em;}
+			.tool-block p em {font-size: inherit;}
+			.tool-block a h1 {font-size: 3em; text-indent:45px; }
+			.tool-block a img {width:425px; height:auto;}
+			.tool-block a h1.wGuide {background:url(../img/pltools_icons_150ppi.png) no-repeat 0px 0px;}
+			.tool-block a h1.iGallery {background:url(../img/pltools_icons_150ppi.png) no-repeat 0px -85px;}
+			.tool-block a h1.aPage {background:url(../img/pltools_icons_150ppi.png) no-repeat 0px -165px;}
+			.tool-block a h1.cLists {background:url(../img/pltools_icons_150ppi.png) no-repeat 0px -255px;}
+			.tool-block a h1.vDirectory {background:url(../img/pltools_icons_150ppi.png) no-repeat 0px -335px;}
+			.tool-block a h1.bCalculator {background:url(../img/pltools_icons_150ppi.png) no-repeat 0px -420px;}
+			.tool-block a h1.gSearch {background:url(../img/pltools_icons_150ppi.png) no-repeat 0px -505px;}
+}
+
+/* --------------------------------------------
+  Idea Gallery Page Styles Desktop
+-------------------------------------------- */
+#content.idea-gallery{ width:100%; background: #f5f5f5;}
+	.ideaGallery {width:75%; float:left; background:white;}
+		.ideaGallery .ig-info {margin:10px;}
+			.ig-info h1 {font-size: 2em; color:#016797; clear:both;}
+			.ig-info p {margin:1em auto; clear:both; float:none;}
+			.ig-info span {display:inline-block; float:left; height:2em; padding:0;}
+				.ig-info div span a {color:#d9a09f;}
+		.ideaGallery .gallery-block {float:left; margin:20px; display:inline-block; width:200px; height:175px; text-align: center;}
+			.gallery-block a {color:black;}
+	aside.planningToolsNav {width:25%; background:#f5f5f5; text-align: center; float:right;}
+		.planningToolsNav .ptNavigation {text-align: left; list-style: none; margin:0; padding:0;}
+			.ptNavigation li {margin:10px auto; width:200px; height:29px; box-shadow: 0 3px 3px 2px #ccc; border-radius: 25px; text-indent: 45px; text-align: left;}
+				.ptNavigation li a {line-height: 30px; color:black; font-weight: bold;}
+			.ptNavigation li.wGuide {background:url(../img/pltools_icons.png)no-repeat 15px 5px;}
+			.ptNavigation li.iGallery {background:url(../img/pltools_icons.png)no-repeat 15px -35px;}
+			.ptNavigation li.aPage {background:url(../img/pltools_icons.png) no-repeat 15px -75px;}
+			.ptNavigation li.cLists {background:url(../img/pltools_icons.png) no-repeat 15px -115px;}
+			.ptNavigation li.vDirectory {background:url(../img/pltools_icons.png) no-repeat 15px -155px;}
+			.ptNavigation li.bCalculator {background:url(../img/pltools_icons.png) no-repeat 15px -195px;}
+			.ptNavigation li.gSearch {background:url(../img/pltools_icons.png) no-repeat 15px -235px;}
+
+/* --------------------------------------------
+  Idea Gallery Page Styles Tablet in landscape
+-------------------------------------------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 1){
+#content.idea-gallery{ width:100%; background: #f5f5f5;}
+	.ideaGallery {width:75% !important; float:left !important;}
+		.ideaGallery .ig-info {margin:10px !important;}
+			.ig-info h1 {font-size: 2em !important;}
+				.ig-info div span a img { width:auto !important;}
+			.ig-info p {margin:1em auto !important;}
+				.ig-info div span a {color:#d9a09f;}
+		.ideaGallery .gallery-block {float:left !important; margin:20px !important; display:inline-block !important; width:200px !important; height:175px !important; text-align: center !important; clear:none !important;}
+			.gallery-block a h1 {font-size: 1em !important;}
+			.gallery-block a img {width:auto !important;}
+	aside.planningToolsNav {width:25% !important; background:#f5f5f5 !important; text-align: center; float:right !important; clear:none !important;}
+		.planningToolsNav .ptNavigation {text-align: left; list-style: none; margin:0; padding:0;}
+			.ptNavigation li {margin:10px auto !important; width:200px !important; height:29px !important; box-shadow: 0 3px 3px 2px #ccc ; border-radius: 25px !important; text-indent: 45px !important; text-align: left;}
+				.ptNavigation li a {line-height: 30px !important; color:black; font-weight: bold; font-size: 1em !important;}
+			.ptNavigation li.wGuide {background:url(../img/pltools_icons.png)no-repeat 15px 5px !important;}
+			.ptNavigation li.iGallery {background:url(../img/pltools_icons.png)no-repeat 15px -35px;}
+			.ptNavigation li.aPage {background:url(../img/pltools_icons.png) no-repeat 15px -75px !important;}
+			.ptNavigation li.cLists {background:url(../img/pltools_icons.png) no-repeat 15px -115px !important;}
+			.ptNavigation li.vDirectory {background:url(../img/pltools_icons.png) no-repeat 15px -155px !important;}
+			.ptNavigation li.bCalculator {background:url(../img/pltools_icons.png) no-repeat 15px -195px !important;}
+			.ptNavigation li.gSearch {background:url(../img/pltools_icons.png) no-repeat 15px -235px !important;}
+}
+
+/* --------------------------------------------
+  Idea Gallery Page Styles Tablet in portrait
+-------------------------------------------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 1){/*Matches landscape styles */}
+
+/* --------------------------------------------
+  Idea Gallery Page Styles Mobile
+-------------------------------------------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px), only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation : landscape), only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait), only screen and (min-device-width : 320px) and (max-device-width : 480px), only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape), only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) {
+	#content.idea-gallery{ background:white;}
+	.ideaGallery {width:100%; clear:both; float:none;}
+		.ideaGallery .ig-info h1 {font-size: 4em;}
+			.ig-info div span a {font-size:1em;}
+				.ig-info div span a img {width:5%; height:auto;}
+		.ideaGallery .ig-container .gallery-block {width:45%; height:auto;}
+			.gallery-block a h1 {font-size: 3em;}
+			.gallery-block a img {width:100%;}
+	aside.planningToolsNav {float:none; width:100%; clear:both; padding:50px 0;}
+		.planningToolsNav img {width:60%;}
+		.ptNavigation li { width:95%; height:100px; border-radius: 75px; text-indent: 100px; margin:20px 0;}
+			.ptNavigation li a {line-height:100px; font-size: 3em;}
+			.ptNavigation li.wGuide {background:url(../img/pltools_icons_150ppi.png)no-repeat 45px 30px;}
+			.ptNavigation li.iGallery {background:url(../img/pltools_icons_150ppi.png)no-repeat 45px -55px;}
+			.ptNavigation li.aPage {background:url(../img/pltools_icons_150ppi.png) no-repeat 45px -135px;}
+			.ptNavigation li.cLists {background:url(../img/pltools_icons_150ppi.png) no-repeat 45px -225px;}
+			.ptNavigation li.vDirectory {background:url(../img/pltools_icons_150ppi.png) no-repeat 45px -305px;}
+			.ptNavigation li.bCalculator {background:url(../img/pltools_icons_150ppi.png) no-repeat 45px -390px;}
+			.ptNavigation li.gSearch {background:url(../img/pltools_icons_150ppi.png) no-repeat 45px -475px;}
+}
+
+/* --------------------------------------------
+  Gown Search Page Styles Desktop
+-------------------------------------------- */
+#content.gown-search{ width:100%; background: #f5f5f5;}
+	.gownSearch {width:75%; float:left; background:white;}
+		.gownSearch .gs-info {margin:10px;}
+			.gs-info h1 {font-size: 2em; color:#016797; clear:both;}
+			.gs-info p {margin:1em auto; clear:both; float:none;}
+			.gs-info span {display:inline-block; float:left; height:2em; padding:0;}
+				.gs-info div span a {color:#d9a09f;}
+	aside.planningToolsNav {width:25%; background:#f5f5f5; text-align: center; float:right;}
+		.planningToolsNav .ptNavigation {text-align: left; list-style: none; margin:0; padding:0;}
+		.planningToolsNav img {margin: 10px 0 17px;}
+			.ptNavigation li {margin:10px auto; width:200px; height:29px; box-shadow: 0 3px 3px 2px #ccc; border-radius: 25px; text-indent: 45px; text-align: left;}
+				.ptNavigation li a {line-height: 30px; color:black; font-weight: bold;}
+			.ptNavigation li.wGuide {background:url(../img/pltools_icons.png)no-repeat 15px 5px;}
+			.ptNavigation li.iGallery {background:url(../img/pltools_icons.png)no-repeat 15px -35px;}
+			.ptNavigation li.aPage {background:url(../img/pltools_icons.png) no-repeat 15px -75px;}
+			.ptNavigation li.cLists {background:url(../img/pltools_icons.png) no-repeat 15px -115px;}
+			.ptNavigation li.vDirectory {background:url(../img/pltools_icons.png) no-repeat 15px -155px;}
+			.ptNavigation li.bCalculator {background:url(../img/pltools_icons.png) no-repeat 15px -195px;}
+			.ptNavigation li.gSearch {background:url(../img/pltools_icons.png) no-repeat 15px -235px;}
+
+/* --------------------------------------------
+  Idea Gallery Page Styles Tablet in landscape
+-------------------------------------------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 1){
+#content.idea-gallery{ width:100%; background: #f5f5f5;}
+	.ideaGallery {width:75% !important; float:left !important;}
+		.ideaGallery .ig-info {margin:10px !important;}
+			.ig-info h1 {font-size: 2em !important;}
+				.ig-info div span a img { width:auto !important;}
+			.ig-info p {margin:1em auto !important;}
+				.ig-info div span a {color:#d9a09f;}
+		.ideaGallery .gallery-block {float:left !important; margin:20px !important; display:inline-block !important; width:200px !important; height:175px !important; text-align: center !important; clear:none !important;}
+			.gallery-block a h1 {font-size: 1em !important;}
+			.gallery-block a img {width:auto !important;}
+	aside.planningToolsNav {width:25% !important; background:#f5f5f5 !important; text-align: center; float:right !important; clear:none !important;}
+		.planningToolsNav .ptNavigation {text-align: left; list-style: none; margin:0; padding:0;}
+			.ptNavigation li {margin:10px auto !important; width:200px !important; height:29px !important; box-shadow: 0 3px 3px 2px #ccc ; border-radius: 25px !important; text-indent: 45px !important; text-align: left;}
+				.ptNavigation li a {line-height: 30px !important; color:black; font-weight: bold; font-size: 1em !important;}
+			.ptNavigation li.wGuide {background:url(../img/pltools_icons.png)no-repeat 15px 5px !important;}
+			.ptNavigation li.iGallery {background:url(../img/pltools_icons.png)no-repeat 15px -35px;}
+			.ptNavigation li.aPage {background:url(../img/pltools_icons.png) no-repeat 15px -75px !important;}
+			.ptNavigation li.cLists {background:url(../img/pltools_icons.png) no-repeat 15px -115px !important;}
+			.ptNavigation li.vDirectory {background:url(../img/pltools_icons.png) no-repeat 15px -155px !important;}
+			.ptNavigation li.bCalculator {background:url(../img/pltools_icons.png) no-repeat 15px -195px !important;}
+			.ptNavigation li.gSearch {background:url(../img/pltools_icons.png) no-repeat 15px -235px !important;}
+}
+
+/* --------------------------------------------
+  Idea Gallery Page Styles Tablet in portrait
+-------------------------------------------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 1){/*Matches landscape styles */}
+
+/* --------------------------------------------
+  Idea Gallery Page Styles Mobile
+-------------------------------------------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px), only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation : landscape), only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait), only screen and (min-device-width : 320px) and (max-device-width : 480px), only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape), only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) {
+	#content.idea-gallery{ background:white;}
+	.ideaGallery {width:100%; clear:both; float:none;}
+		.ideaGallery .ig-info h1 {font-size: 4em;}
+			.ig-info div span a {font-size:1em;}
+				.ig-info div span a img {width:5%; height:auto;}
+		.ideaGallery .ig-container .gallery-block {width:45%; height:auto;}
+			.gallery-block a h1 {font-size: 3em;}
+			.gallery-block a img {width:100%;}
+	aside.planningToolsNav {float:none; width:100%; clear:both; padding:50px 0;}
+		.planningToolsNav img {width:60%;}
+		.ptNavigation li { width:95%; height:100px; border-radius: 75px; text-indent: 100px; margin:20px 0;}
+			.ptNavigation li a {line-height:100px; font-size: 3em;}
+			.ptNavigation li.wGuide {background:url(../img/pltools_icons_150ppi.png)no-repeat 45px 30px;}
+			.ptNavigation li.iGallery {background:url(../img/pltools_icons_150ppi.png)no-repeat 45px -55px;}
+			.ptNavigation li.aPage {background:url(../img/pltools_icons_150ppi.png) no-repeat 45px -135px;}
+			.ptNavigation li.cLists {background:url(../img/pltools_icons_150ppi.png) no-repeat 45px -225px;}
+			.ptNavigation li.vDirectory {background:url(../img/pltools_icons_150ppi.png) no-repeat 45px -305px;}
+			.ptNavigation li.bCalculator {background:url(../img/pltools_icons_150ppi.png) no-repeat 45px -390px;}
+			.ptNavigation li.gSearch {background:url(../img/pltools_icons_150ppi.png) no-repeat 45px -475px;}
+}
+/* --------------------------------------------
+  Venue Directory Page Styles Desktop
+-------------------------------------------- */
+#content.venue-directory {width:100%; background:#f5f5f5;}
+	.venueDirectory {width:75%; float:left; background: white;}
+		.venueDirectory .vd-info {margin:10px;}
+			.vd-info h1 {font-size: 2em; color:#016797; clear:both;}
+			.vd-info p {margin:10px auto; clear:both; float:none;}
+				.vd-info div span {display:inline-block; float:left; height:2em; padding:0;}
+					.vd-info div span a {color:#d9a09f;}
+		.venueDirectory .vd-key {background:#e8ecf2; display:inline-block; padding:10px 0;}
+			.vd-key img {float:left; margin:0;}
+			.vd-key ul {list-style: none; margin:0; padding:0;}
+				.vd-key ul li {float:left; width:200px;}
+					.vd-key ul li a {display:inline-block; padding:5px; text-indent: 20px; line-height: 15px; color:black;}
+						.vd-key li.brideDressingRoom {background:url(../img/icons_72ppi.png)no-repeat 0px -37px;}
+						.vd-key li.ceremonySite {background:url(../img/icons_72ppi.png)no-repeat 0px 2px;}
+						.vd-key li.indoorOnly {background:url(../img/icons_72ppi.png)no-repeat 0px -78px;}
+						.vd-key li.outdoorOnly {background:url(../img/icons_72ppi.png)no-repeat 0px -117px;}
+						.vd-key li.bothInOutdoor {background:url(../img/icons_72ppi.png)no-repeat 0px -158px;}
+						.vd-key li.inHouseCateringOnly {background:url(../img/icons_72ppi.png)no-repeat 0px -198px;}
+						.vd-key li.inHouseLiquorOnly {background:url(../img/icons_72ppi.png)no-repeat 0px -237px;}
+						.vd-key li.gardenPatio {background:url(../img/icons_72ppi.png)no-repeat 0px -277px;}
+						.vd-key li.danceFloor {background:url(../img/icons_72ppi.png)no-repeat 0px -318px;}
+						.vd-key li.bandsDj {background:url(../img/icons_72ppi.png)no-repeat 0px -357px;}
+						.vd-key li.canProvideCake {background:url(../img/icons_72ppi.png)no-repeat 0px -397px;}
+						.vd-key li.valetParking {background:url(../img/icons_72ppi.png)no-repeat 0px -438px;}
+						.vd-key li.freeParking {background:url(../img/icons_72ppi.png)no-repeat 0px -477px;}
+						.vd-key li.securityRequired {background:url(../img/icons_72ppi.png)no-repeat 0px -518px;}
+						.vd-key li.virtualTour {background:url(../img/icons_72ppi.png)no-repeat 0px -558px;}
+						/*Accomodations*/
+						.vd-key li.discountRoom {background:url(../img/iconsprite_20_72ppi.png)no-repeat 0px 5px;}
+						.vd-key li.suitesAvailable {background:url(../img/iconsprite_20_72ppi.png)no-repeat 0px -35px;}
+						.vd-key li.kitchenettes {background:url(../img/iconsprite_20_72ppi.png)no-repeat 0px -75px;}
+						.vd-key li.meetingRoom {background:url(../img/iconsprite_20_72ppi.png)no-repeat 0px -115px;}
+						.vd-key li.breakfastIncluded {background:url(../img/iconsprite_20_72ppi.png)no-repeat 0px -155px;}
+						.vd-key li.handicapRoom {background:url(../img/iconsprite_20_72ppi.png)no-repeat 0px -195px;}
+						.vd-key li.swimmingPool {background:url(../img/iconsprite_20_72ppi.png)no-repeat 0px -235px;}
+						.vd-key li.airportShuttle {background:url(../img/iconsprite_20_72ppi.png)no-repeat 0px -275px;}
+						.vd-key li.businessCenter {background:url(../img/iconsprite_20_72ppi.png)no-repeat 0px -315px;}
+						.vd-key li.freeWifi {background:url(../img/iconsprite_20_72ppi.png)no-repeat 0px -355px;}
+						.vd-key li.freeParking {background:url(../img/iconsprite_20_72ppi.png)no-repeat 0px -395px;}
+						.vd-key li.petFriendly {background:url(../img/iconsprite_20_72ppi.png)no-repeat 0px -435px;}
+						.vd-key li.restaurantsNear {background:url(../img/iconsprite_20_72ppi.png)no-repeat 0px -475px;}
+						.vd-key li.fitnessCenter {background:url(../img/iconsprite_20_72ppi.png)no-repeat 0px -515px;}
+						.vd-key li.north {background:url(../img/iconsprite_20_72ppi.png)no-repeat 0px -555px;}
+						.vd-key li.northEast {background:url(../img/iconsprite_20_72ppi.png)no-repeat 0px -595px;}
+						.vd-key li.northWest {background:url(../img/iconsprite_20_72ppi.png)no-repeat 0px -635px;}
+						.vd-key li.south {background:url(../img/iconsprite_20_72ppi.png)no-repeat 0px -675px;}
+						.vd-key li.southEast {background:url(../img/iconsprite_20_72ppi.png)no-repeat 0px -715px;}
+						.vd-key li.southWest {background:url(../img/iconsprite_20_72ppi.png)no-repeat 0px -755px;}
+						.vd-key li.east {background:url(../img/iconsprite_20_72ppi.png)no-repeat 0px -795px;}
+						.vd-key li.west {background:url(../img/iconsprite_20_72ppi.png)no-repeat 0px -835px;}
+						.vd-key li.central {background:url(../img/iconsprite_20_72ppi.png)no-repeat 0px -875px;}
+						.vd-key li.downtown {background:url(../img/iconsprite_20_72ppi.png)no-repeat 0px -915px;}
+						.vd-key li.nearRiver {background:url(../img/iconsprite_20_72ppi.png)no-repeat 0px -955px;}
+						.vd-key li.near6th {background:url(../img/iconsprite_20_72ppi.png)no-repeat 0px -995px;}
+		.venueDirectory .vd-container {clear:both;}
+			.vd-container .directory-block {clear:both; display:inline-block; margin:10px; width:98%;}
+			.directory-block:nth-child(even) {background:#e8ecf2;}
+			.directory-block ul {list-style: none; margin:0;}
+				.directory-block ul li {float:left; width:42px; height:42px; margin:0 2px;}
+					.directory-block ul li a {display:block; text-indent: -99999em; height:42px;}
+						.directory-block li.brideDressingRoom {background:url(../img/icons_150ppi.png)no-repeat 0px -84px}
+						.directory-block li.ceremonySite {background:url(../img/icons_150ppi.png)no-repeat 0px 0px;}
+						.directory-block li.indoorOnly {background:url(../img/icons_150ppi.png)no-repeat 0px -168px;}
+						.directory-block li.outdoorOnly {background:url(../img/icons_150ppi.png)no-repeat 0px -252px;}
+						.directory-block li.bothInOutdoor {background:url(../img/icons_150ppi.png)no-repeat 0px -336px;}
+						.directory-block li.inHouseCateringOnly {background:url(../img/icons_150ppi.png)no-repeat 0px -420px;}
+						.directory-block li.inHouseLiquorOnly {background:url(../img/icons_150ppi.png)no-repeat 0px -504px;}
+						.directory-block li.gardenPatio {background:url(../img/icons_150ppi.png)no-repeat 0px -588px;}
+						.directory-block li.danceFloor {background:url(../img/icons_150ppi.png)no-repeat 0px -672px;}
+						.directory-block li.bandsDj {background:url(../img/icons_150ppi.png)no-repeat 0px -756px;}
+						.directory-block li.canProvideCake {background:url(../img/icons_150ppi.png)no-repeat 0px -840px;}
+						.directory-block li.valetParking {background:url(../img/icons_150ppi.png)no-repeat 0px -924px;}
+						.directory-block li.freeParking {background:url(../img/icons_150ppi.png)no-repeat 0px -1008px;}
+						.directory-block li.securityRequired {background:url(../img/icons_150ppi.png)no-repeat 0px -1092px;}
+						.directory-block li.virtualTour {background:url(../img/icons_150ppi.png)no-repeat 0px -1176px;}
+						/*Accomodations*/
+						.directory-block li.discountRoom {background:url(../img/iconsprite_42_150ppi.png)no-repeat 0px 0px;}
+						.directory-block li.suitesAvailable {background:url(../img/iconsprite_42_150ppi.png)no-repeat 0px -84px;}
+						.directory-block li.kitchenettes {background:url(../img/iconsprite_42_150ppi.png)no-repeat 0px -168px;}
+						.directory-block li.meetingRoom {background:url(../img/iconsprite_42_150ppi.png)no-repeat 0px -252px;}
+						.directory-block li.breakfastIncluded {background:url(../img/iconsprite_42_150ppi.png)no-repeat 0px -336px;}
+						.directory-block li.handicapRoom {background:url(../img/iconsprite_42_150ppi.png)no-repeat 0px -420px;}
+						.directory-block li.swimmingPool {background:url(../img/iconsprite_42_150ppi.png)no-repeat 0px -504px;}
+						.directory-block li.airportShuttle {background:url(../img/iconsprite_42_150ppi.png)no-repeat 0px -588px;}
+						.directory-block li.businessCenter {background:url(../img/iconsprite_42_150ppi.png)no-repeat 0px -672px;}
+						.directory-block li.freeWifi {background:url(../img/iconsprite_42_150ppi.png)no-repeat 0px -756px;}
+						.directory-block li.freeParking {background:url(../img/iconsprite_42_150ppi.png)no-repeat 0px -840px;}
+						.directory-block li.petFriendly {background:url(../img/iconsprite_42_150ppi.png)no-repeat 0px -924px;}
+						.directory-block li.restaurantsNear {background:url(../img/iconsprite_42_150ppi.png)no-repeat 0px -1008px;}
+						.directory-block li.fitnessCenter {background:url(../img/iconsprite_42_150ppi.png)no-repeat 0px -1092px;}
+						.directory-block li.north {background:url(../img/iconsprite_42_150ppi.png)no-repeat 0px -1176px;}
+						.directory-block li.northEast {background:url(../img/iconsprite_42_150ppi.png)no-repeat 0px -1260px;}
+						.directory-block li.northWest {background:url(../img/iconsprite_42_150ppi.png)no-repeat 0px -1344px;}
+						.directory-block li.south {background:url(../img/iconsprite_42_150ppi.png)no-repeat 0px -1428px;}
+						.directory-block li.southEast {background:url(../img/iconsprite_42_150ppi.png)no-repeat 0px -1512px;}
+						.directory-block li.southWest {background:url(../img/iconsprite_42_150ppi.png)no-repeat 0px -1596px;}
+						.directory-block li.east {background:url(../img/iconsprite_42_150ppi.png)no-repeat 0px -1680px;}
+						.directory-block li.west {background:url(../img/iconsprite_42_150ppi.png)no-repeat 0px -1764px;}
+						.directory-block li.central {background:url(../img/iconsprite_42_150ppi.png)no-repeat 0px -1848px;}
+						.directory-block li.downtown {background:url(../img/iconsprite_42_150ppi.png)no-repeat 0px -1932px;}
+						.directory-block li.nearRiver {background:url(../img/iconsprite_42_150ppi.png)no-repeat 0px -2016px;}
+						.directory-block li.near6th {background:url(../img/iconsprite_42_150ppi.png)no-repeat 0px -2100px;}
+.fixed {position:fixed;	top:0;	width:720px;}
+.placeholder {height:115px;}
+.padded {margin-top:120px;}
+/* --------------------------------------------
+  Venue Directory Page Styles Tablet in landscape
+-------------------------------------------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 1){.fixed {width:730px;} .padded{margin-top:150px;}}
+
+/* --------------------------------------------
+  Venue Directory Page Styles Tablet in portrait
+-------------------------------------------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 1){.fixed {width:730px;} .padded{margin-top:150px;}}
+
+/* --------------------------------------------
+  Venue Directory Page Styles Mobile
+-------------------------------------------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px), only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation : landscape), only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait), only screen and (min-device-width : 320px) and (max-device-width : 480px), only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape), only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) {
+	#content.venue-directory {width:100%; background:white;}
+		.venueDirectory {width:100%; clear:both; float:none;}
+			.vd-info h1 {font-size: 4em; float:none; clear:both;}
+			.vd-info div span {float:none; clear:both; padding:0; width:100%;}
+				.vd-info div span a {font-size:3em;}
+					.vd-info div span a img {width:5%; height:auto;}
+			.vd-key { text-align: center; width:100% !important;}
+				.vd-key img {float:none; margin:0 auto; width:50%; height:auto;}
+				.vd-key ul li {float:left; width:325px; height:70px;}
+					.vd-key ul li a {display:inline-block; padding:5px; text-indent: 50px; line-height: 0.8em; color:black; font-size: 2em;}
+						.vd-key li.brideDressingRoom {background:url(../img/icons_150ppi.png)no-repeat 0px -84px}
+						.vd-key li.ceremonySite {background:url(../img/icons_150ppi.png)no-repeat 0px 0px;}
+						.vd-key li.indoorOnly {background:url(../img/icons_150ppi.png)no-repeat 0px -168px;}
+						.vd-key li.outdoorOnly {background:url(../img/icons_150ppi.png)no-repeat 0px -252px;}
+						.vd-key li.bothInOutdoor {background:url(../img/icons_150ppi.png)no-repeat 0px -336px;}
+						.vd-key li.inHouseCateringOnly {background:url(../img/icons_150ppi.png)no-repeat 0px -420px;}
+						.vd-key li.inHouseLiquorOnly {background:url(../img/icons_150ppi.png)no-repeat 0px -504px;}
+						.vd-key li.gardenPatio {background:url(../img/icons_150ppi.png)no-repeat 0px -588px;}
+						.vd-key li.danceFloor {background:url(../img/icons_150ppi.png)no-repeat 0px -672px;}
+						.vd-key li.bandsDj {background:url(../img/icons_150ppi.png)no-repeat 0px -756px;}
+						.vd-key li.canProvideCake {background:url(../img/icons_150ppi.png)no-repeat 0px -840px;}
+						.vd-key li.valetParking {background:url(../img/icons_150ppi.png)no-repeat 0px -924px;}
+						.vd-key li.freeParking {background:url(../img/icons_150ppi.png)no-repeat 0px -1008px;}
+						.vd-key li.securityRequired {background:url(../img/icons_150ppi.png)no-repeat 0px -1092px;}
+						.vd-key li.virtualTour {background:url(../img/icons_150ppi.png)no-repeat 0px -1176px;}
+				.directory-block h1 {font-size: 2.5em;}
+				.directory-block span {font-size: 2em;}
+				.directory-block ul li {float:left; width:42px; height:42px; margin:0 2px;}
+				.padded{margin-top:600px;}
+}
+/* --------------------------------------------
+  Articles Page Styles Desktop
+-------------------------------------------- */
+#content.articles {width:100%; background:#f5f5f5;}
+	.articlesPage {width:75%; float:left; background: white;}
+		.articlesPage .articles-info {margin:10px;}
+			.articles-info h1 {font-size: 2em; color:#016797; clear:both;}
+			.articles-info p {margin:10px auto; clear:both; float:none;}
+				.articles-info div span {display:inline-block; height:2em; padding:0; clear:both;}
+					.articles-info div span a {color:#d9a09f;}
+		.articles-nav {margin:10px; display: inline-block; width:90%;}
+			.articles-nav strong {float:left; font-size: 0.8em;}
+			.articles-nav ul {margin:0; padding:0; list-style:none;}
+				.articles-nav ul li {padding:0 5px; display: inline-block; border-right:1px solid black; line-height:0.9em;}
+				.articles-nav ul li:last-child {border-right:0;}
+					.articles-nav ul li a {color:black; font-size: 0.78em;}
+		.articles-container {clear:both; margin:10px 0 0 0; display:inline-block;}
+			.articles-container div {padding:5px 10px;}
+			.articles-container {padding:5px 10px;}
+			.post-container {margin:10px;}
+				.post-container h1 { font-size:1.5em; color:#016797; clear:both;}
+			.article-block {background:#e8ecf2; display:inline-block; width:98%;}
+			.article-block:nth-child(even){background:white;}
+				.article-block a img {float:left; margin:10px;}
+				.article-block ul {margin:0 0 0 160px; list-style: none;}
+					.article-block ul li {padding:1px 0; float:left; width:280px;}
+					.article-block ul li:before {content:'~ ';}
+						.article-block ul li a {font-size:0.9em;}
+.wp-caption {border: 10px solid white; box-shadow: 0px 0px 15px #888; text-align: center; margin:15px 0;}
+.alignleft {float: left; margin:0 15px; padding: 0px;}
+.alignright {float: right; margin:0 15px; padding: 0px;}
+
+/* --------------------------------------------
+  Articles Page Styles Tablet in landscape
+-------------------------------------------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 1){/*Styles match desktop*/}
+
+/* --------------------------------------------
+  Articles Page Styles Tablet in portrait
+-------------------------------------------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 1){/*Matches landscape styles */}
+
+/* --------------------------------------------
+  Articles Page Styles Mobile
+-------------------------------------------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px), only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation : landscape), only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait), only screen and (min-device-width : 320px) and (max-device-width : 480px), only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape), only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) {
+	.articlesPage {width:100%; float:none;}
+		.articles-info h1 {font-size: 4em; float:none;}
+			.articles-info div span {height:auto; padding:0; float:none; width:100%;}
+			.articles-info div span a {font-size:3em;}
+				.articles-info div span a img {width:5%; height:auto; vertical-align: middle;}
+		.articles-nav strong {font-size: 2em;}
+			.articles-nav ul li {line-height: inherit;}
+				.articles-nav ul li a {font-size: 2em;}
+	.article-block {text-align: center; width:100%;}
+			.article-block a img {float:none; width:98%; height:auto;}
+		.article-block ul {text-align: left; margin:0 auto;}
+			.article-block ul li {float:none; width:90%; margin:0 auto;}
+				.article-block ul li a {font-size:1.5em;}
+}
+
+/* --------------------------------------------
+  Checklists Page Styles Desktop
+-------------------------------------------- */
+#content.checkLists {width:100%; background:#f5f5f5;}
+	.check-lists {width:75%; float:left; background: white;}
+		.check-lists .cl-info {margin:10px;}
+			.cl-info h1 {font-size: 2em; color:#016797; clear:both;}
+			.cl-info p {margin:10px auto; clear:both; float:none;}
+			.cl-info p:nth-of-type(2) {font-size: 0.8em; line-height:1.4em;}
+				.cl-info p img {float:left; margin:0 10px 0 0;}
+				.cl-info div span {display:inline-block; float:left; height:2em; padding:0;}
+					.cl-info div span a {color:#d9a09f;}
+		.cl-container {clear:both; margin:10px 0 0 0; display:inline-block;}
+			.checkList-block {background:#e8ecf2; display:inline-block;}
+			.checkList-block:nth-child(even){background:white;}
+				.checkList-block a img {height:auto; width:150px; float:left; margin:30px 10px 30px 0;}
+				.checkList-block ul {margin:0 0 0 160px; list-style: none;}
+					.checkList-block ul li {padding:1px 0; float:left; width:275px;}
+					.checkList-block ul li:before {content:'~ ';}
+						.checkList-block ul li a {font-size:0.9em;}
+
+/* --------------------------------------------
+  Checklist Page Styles Tablet in landscape
+-------------------------------------------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 1){/*Styles match desktop*/}
+
+/* --------------------------------------------
+  Checklist Page Styles Tablet in portrait
+-------------------------------------------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 1){/*Matches landscape styles */}
+
+/* --------------------------------------------
+  Checklist Page Styles Mobile
+-------------------------------------------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px), only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation : landscape), only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait), only screen and (min-device-width : 320px) and (max-device-width : 480px), only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape), only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) {
+	.check-lists {width:100%; float:none;}
+		.cl-info h1 {font-size: 4em; float:none;}
+		.cl-info p img {display:none;}
+			.cl-info div span {height:auto; padding:0; float:none; width:100%;}
+			.cl-info div span a {font-size:3em;}
+				.cl-info div span a img {width:5%; height:auto; vertical-align: middle;}
+	.checkList-block {text-align: center; width:100%;}
+			.checkList-block a img {float:none; width:80%; height:auto;}
+		.checkList-block ul {text-align: left; margin:0 auto;}
+			.checkList-block ul li {float:none; width:90%; margin:0 auto;}
+				.checkList-block ul li a {font-size:1.5em;}
+}
+
+/* --------------------------------------------
+  Wedding Guide Page Styles Desktop
+-------------------------------------------- */
+#content.weddingGuide {width:100%; background:#f5f5f5;}
+	.wedding-guide {width:75%; float:left; background: white;}
+		.wedding-guide .wg-info {margin:10px;}
+			.wg-info h1 {font-size: 2em; color:#016797; clear:both;}
+			.wg-info p {margin:10px auto; clear:both; float:none;}
+				.wg-info p img {float:left; margin:0 10px 0 0; width:32px; height:auto;}
+				.wg-info div span {display:inline-block; float:left; height:2em; padding:0;}
+					.wg-info div span a {color:#d9a09f;}
+		.wg-virtualBook {width:100%;}
+			.wg-virtualBook iframe {width:100%; height:675px; background:#ccc;}
+			.wg-virtualBook .no-flash {display:none;}
+		.wg-distribution {width:100%;}
+			.wg-distribution table {width:100%; border:1px solid white;}
+				.wg-distribution table thead tr th {background:#e8ecf2; padding:10px; border:1px solid white; text-align: left; width:30%;}
+				.wg-distribution table tbody tr:nth-child(even) {background:#f5f5f5;}
+				.wg-distribution table tbody tr td {padding:10px;}
+					.wg-distribution table tbody tr td img {width:32px; height:auto;}
+
+/* --------------------------------------------
+  Wedding Guide Page Styles Tablet
+-------------------------------------------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 1){
+	.wg-virtualBook iframe {display:none;}
+	.wg-virtualBook .no-flash {display:block;}
+		.no-flash p {font-style: italic; font-size: 1em; text-align: center;}
+}
+
+/* --------------------------------------------
+  Wedding Guide Page Styles Mobile
+-------------------------------------------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px), only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation : landscape), only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait), only screen and (min-device-width : 320px) and (max-device-width : 480px), only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape), only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) {
+	.wedding-guide {float:none; clear:both; width:100%;}
+		.wg-info h1 {font-size:4em;}
+			.wg-info p img {width:64px;}
+		.wg-info div span {height:auto; padding:0; float:none; width:100%;}
+			.wg-info div span a {font-size:3em;}
+				.wg-info div span a img {width:5%; height:auto; vertical-align: middle;}
+	.wg-virtualBook iframe {display:none;}
+	.wg-virtualBook .no-flash {display:block;}
+		.no-flash p {font-style: italic; font-size: 1em; text-align: center;}
+
+	.wg-distribution table thead {display:none;}
+	.wg-distribution table tbody tr:nth-child(even) {background:white;}
+	.wg-distribution table tbody tr:nth-child(odd) {background:#f5f5f5;}
+		.wg-distribution table tbody tr td {width:99%; display: inline-block; font-size: 2em; line-height: 64px;}
+			.wg-distribution table tbody tr td a {color:black;}
+			.wg-distribution table tbody tr td a img {vertical-align: top; width:64px;}
+
+}
+
+/* --------------------------------------------
+  Budget Calculator Page Styles Desktop
+-------------------------------------------- */
+#content.budgetCalculator {width:100%;}
+
+/* --------------------------------------------
+  Budget Calculator Page Styles Tablet
+-------------------------------------------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 1){
+	#content.budgetCalculator {width:100%;}
+	.container .row-fluid.calc-header input[type="text"].input-small, .container .row-fluid.calc-header input[type="number"].input-small{width:100px;}
+	.container .row-fluid.calc-header button.go {padding: 0 5px;}
+	.container .row-fluid.calc-header button.print {text-indent:25px; width:85px;}
+	.container .row-fluid.calc-header button.reset {text-indent: 20px; width: 85px;}
+	.container .row-fluid.calc-header button.pdf {text-indent: 20px;}
+	.container .row-fluid.calc-header button.email {text-indent: 35px; width:95px; padding:0 5px;}
+}
+/* --------------------------------------------
+  Bride Registration Page Styles Desktop
+-------------------------------------------- */
+#content.register {width:100%;}
+#bride-registration {margin:10px;}
+#content.about {width:100%;}
+/* --------------------------------------------
+  Category Contact Form Page Styles Desktop
+-------------------------------------------- */
+.category-contact {padding:10px;}
+.category-contact fieldset:nth-of-type(1){ float:left; width:365px; margin:10px; clear:none;}
+.category-contact fieldset:nth-of-type(2){ float:left; width:365px; margin:10px; clear:none;}
+.category-contact fieldset{clear:both; width:100%;}
+.category-contact label {width:150px;}
+.category-contact input {width:180px;}
+.category-contact .checkboxes{list-style:none;}
+.category-contact .checkboxes li{display:inline-block; width:auto; margin:10px;}
+.category-contact .checkboxes li input {line-height: 35px; margin:11px 5px; width:auto;}
+.category-contact .checkboxes li label {width:auto; clear:none;}
+

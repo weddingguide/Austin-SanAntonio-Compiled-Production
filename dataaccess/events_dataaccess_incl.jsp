@@ -1,0 +1,3 @@
+<%
+       wgbeDataAccessCtrl.inclEvents              = true;
+%>
