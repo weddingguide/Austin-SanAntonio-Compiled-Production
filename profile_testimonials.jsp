@@ -19,7 +19,7 @@
                   </div>
                   <hr />
                   <div class="profileMedia" id="pNav">
-                     <p>Testimonials Coming Soon!</p>
+                     <%@ include file="incl/profile_profileTestimonials_incl.jsp" %>
                   </div>
                </div>
                <aside class="profile-nav">

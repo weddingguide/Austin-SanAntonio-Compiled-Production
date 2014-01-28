@@ -10,8 +10,8 @@
    <header>
       <%@ include file="incl/header_incl.jsp" %>
    </header> 
-   <div id="content" class="passport">
-      <p>Passport to Marriage coming soon!</p>
+   <div id="content" class="about">
+      <%@ include file="incl/passport_incl.jsp" %>
    </div><!-- /content -->
 <footer>
    <%@ include file="incl/footer_incl.jsp" %>

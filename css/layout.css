@@ -48,11 +48,10 @@ a:focus {
   border: none;
   padding: 0px;
   background-color: #ffffff;
-  height: 33px;
-  line-height: 33px;
-  vertical-align: middle;
-  font-size: 22px;
+  line-height: 10px;
+  font-size: 33px;
   font-weight: bold;
+  margin: 10px 0;
 }
 .container .row-fluid.calc-header input[type="text"],
 .container .row-fluid.calc-header input[type="number"] {

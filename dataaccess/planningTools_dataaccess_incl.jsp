@@ -28,6 +28,7 @@
                                                      "Bride Registration",
                                                      "About",
                                                      "ContactUsContents",
+                                                     "PassportToMarriage"
                                                    };
       wgbeDataAccessCtrl.staticContentNames      = staticContentNames;
 
