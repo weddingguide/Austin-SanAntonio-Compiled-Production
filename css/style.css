@@ -68,7 +68,7 @@ body { background: #fff; font-family: 'Open Sans', sans-serif; color: #252525; t
 		header { overflow: hidden; clear: both; margin-bottom: 0px; }
 			header hgroup { float: left; padding:0px;}
 				header hgroup img { margin:0 10px; max-width:100%;}	
-				header hgroup h1 { font-family: 'Open Sans Condensed', sans-serif; font-size: 2em; color:#016797; text-align:center; }
+				header hgroup h1 { font-family: 'Open Sans Condensed', sans-serif; font-size: 2em; color:#016797; text-align:center; margin:7px 0;}
 			.branding { width:75.0%; background:url(../img/watermark_atx.jpg) no-repeat; height:146px; padding:0; margin-right:3px; }
 				.branding img { float:left; }
 				.branding .header-book a:nth-child(2) img { margin-top:25px; }
