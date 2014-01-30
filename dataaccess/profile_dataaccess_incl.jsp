@@ -23,5 +23,9 @@
     wgbeDataAccessCtrl.getCategoryCtrl().getProfileCtrl().inclDescription  = true;
     wgbeDataAccessCtrl.getCategoryCtrl().getProfileCtrl().inclAbstract     = true;
     wgbeDataAccessCtrl.getCategoryCtrl().getProfileCtrl().inclVirtualTours = true;
+
+    wgbeDataAccessCtrl.getCategoryCtrl().getProfileCtrl().imageWidth       = 800;
+    wgbeDataAccessCtrl.getCategoryCtrl().getProfileCtrl().imageHeight      = 800;
+    wgbeDataAccessCtrl.getCategoryCtrl().getProfileCtrl().imageScaleOnlyNoCrop = true;
 %>
 
