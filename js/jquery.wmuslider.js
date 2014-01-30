@@ -46,6 +46,9 @@
             /* Load Slide
             ================================================== */ 
             var loadSlide = function(index, infinite, touch) {
+                if (slidesCount <= 1){
+                    isAnimating = false;
+                }
                 if (isAnimating) {
                     return false;
                 }

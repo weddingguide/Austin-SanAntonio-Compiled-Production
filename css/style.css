@@ -243,10 +243,11 @@ body { background: #fff; font-family: 'Open Sans', sans-serif; color: #252525; t
 				.bridal-blog div img { margin: 5px 0 !important; }
 			.bridal-blog a { color:#d9a09f; }
 			.bridal-blog a:hover{ text-decoration: none; font-weight: bold; }
-			.bridal-blog h3 { text-align: left; margin:5px 0;}
+			.bridal-blog h3 { text-align: left; margin:15px 0 5px;}
+				.bridal-blog h3 small {font-size: 10px;}
 				.bridal-blog h3 a { color:black; }
 				.bridal-blog h3 a:hover {text-decoration: underline;}	
-			.bridal-blog p { text-align: left; font-size: .85em;}
+			.bridal-blog p { text-align: left; font-size: 1em; line-height: 1em;}
 				.bridal-blog p a {color:black; font-weight: bold;}
 				.bridal-blog p a:hover {text-decoration: underline;}
 		.special-offers { float:left; width:48%; margin:3px 3px 0 0; background:url(../img/flower_white_horiz_UL.png) no-repeat top left #e8ecf2; padding:0px;	text-align: center;	height:250px;}
