@@ -1174,7 +1174,7 @@ form button {font-size: 2em;}
 		.venueDirectory .vd-info {margin:10px;}
 			.vd-info h1 {font-size: 2em; color:#016797; clear:both;}
 			.vd-info p {margin:10px auto; clear:both; float:none;}
-				.vd-info div span {display:inline-block; float:left; height:2em; padding:0;}
+				.vd-info div span {display:inline-block; height:2em; padding:0;}
 					.vd-info div span a {color:#d9a09f;}
 		.venueDirectory .vd-key {background:#e8ecf2; display:inline-block; padding:10px 0;}
 			.vd-key img {float:left; margin:0;}

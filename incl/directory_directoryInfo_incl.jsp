@@ -20,6 +20,7 @@
             });
         });
         </script>
+        <x:if select="$doc/WGBE/region/categories/category/@id = '36'">
         <h1>Venues Directory</h1>
         <div>
                 <span>
@@ -27,3 +28,12 @@
                 </span>
         </div>
         <p>Browse through the directory below to view range of services our Venues professionals provide, as well as other details that will beuseful when narrowing down your choice of a wedding facility. Click on a company name to view the profile!</p>
+        </x:if>
+        <x:if select="$doc/WGBE/region/categories/category/@id = '3'">
+        <h1>Accomodations Directory</h1>
+        <div>
+                <span>
+                        <a href="javascript:history.go(-1)"><img src="/img/arrow_pink.png" /> Back to Planning Tools</a>
+                </span>
+        </div>
+        </x:if>

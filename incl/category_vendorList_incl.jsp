@@ -1,3 +1,4 @@
+<x:if select="$doc/WGBE/region/categories/category/profileSets/@count != '0'">
 <x:forEach select="$doc/WGBE/region/categories/category/profileSets/profileSet/profiles/profile" var="cProfile">
    <div class="vendor-entry">
       <a href="/<x:out select="$cProfile/@urlcompliantvendorname"/>"><img src="<x:out select="$cProfile/@avatarURL"/>" /></a>
@@ -24,4 +25,7 @@
                 <span><img src="/img/arrow_pink.png" /> <a href="?noportal=true&page=<x:out select="$profileSet/@id"/>">Page <x:out select="$profileSet/@id"/></a></span>
         </x:forEach>
 </x:if>
-
+</x:if>
+<x:if select="$doc/WGBE/region/categories/category/profileSets/@count = '0'">
+<p>Sorry no results have been found.</p>
+</x:if>

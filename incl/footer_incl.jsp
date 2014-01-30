@@ -22,7 +22,7 @@
           <ul class="social-media">
             <li><a href="<x:out select="$doc/WGBE/region/socialmedia/@facebook"/>"><img src="http://austin.texasweddingsltd.net/img/facebook.png" /></a></li>
             <li><a href="<x:out select="$doc/WGBE/region/socialmedia/@twitter"/>"><img src="http://austin.texasweddingsltd.net/img/twitter.png" /></a></li>
-            <li><a href="<x:out select="$doc/WGBE/region/socialmedia/@googleplus"/>"><img src="http://austin.texasweddingsltd.net/img/googleplus.png" /></a></li>
+            <li style="display:none;"><a href="<x:out select="$doc/WGBE/region/socialmedia/@googleplus"/>"><img src="http://austin.texasweddingsltd.net/img/googleplus.png" /></a></li>
             <li><a href="<x:out select="$doc/WGBE/region/socialmedia/@pinterest"/>"><img src="http://austin.texasweddingsltd.net/img/pinterest.png" /></a></li>
             <li><a href="<x:out select="$doc/WGBE/region/socialmedia/@youtube"/>"><img src="http://austin.texasweddingsltd.net/img/youtube.png" /></a></li>
             <li><a href="<x:out select="$doc/WGBE/region/socialmedia/@instagram"/>"><img src="http://austin.texasweddingsltd.net/img/instagram.png" /></a></li>
