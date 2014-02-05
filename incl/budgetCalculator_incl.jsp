@@ -28,7 +28,7 @@
             <a href="javascript:history.go(-1)"><img src="/img/arrow_pink.png" /> Back to Planning Tools</a>
         </span>
     </div>
-    <div class="well">
+    <div>
         <p>Our new and improved Budget Calculator will help you keep your budget on track as you book services for your wedding!  Enter your budget and number of guests below, click &ldquo;Go,&rdquo; and we will calculate the average cost of each service in the &ldquo;Estimated Cost&rdquo; column.  We’ll also help you drill down into each service, and as you enter what you’re spending in the &ldquo;Actual Cost&rdquo; column, you can see in real time how much you have left over.  If the boxes in that column show <strong style="color:green;">green</strong>, you’re on or under budget; if they show <strong>red</strong>, you’ve gone over!</p>
 
         <p>When you’re done, use the buttons below to print out the worksheet, e-mail yourself a copy or download a PDF.  If you want to start over, there is also a &ldquo;Reset&rdquo; button that will wipe all the fields clean.  Feel free to contact us at weddingguide@texasweddings.com if you have any questions!</p>

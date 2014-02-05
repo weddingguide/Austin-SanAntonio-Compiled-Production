@@ -38,6 +38,14 @@
 		
 		},
 		{
+			"name": "Photography & Videography",
+			"tips": "Some tips about Photography",
+			"percent": 0.11,
+			"items": ["Engagement Photo","Formal Portrait","Wedding Album & Photos","Parent's Albums","Extra Prints","Photographer's Fee"],
+			"add": true,
+			"per_person": false
+		},
+		{
 			"name": "Music",
 			"tips": "Some tips about Music",
 			"percent": 0.05,
