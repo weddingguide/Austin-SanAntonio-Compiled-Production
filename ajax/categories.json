@@ -2,133 +2,124 @@
 	"categories":[
 		
 		{
-			"name": "Venues",
-			"tips": "Some tips about venues",
-			"percent": 0.35,
-			"items": ["Rehearsal Dinner","Ceremony Dinner","Reception Site"],
-			"add": true,
-			"per_person": false
-		
-		},
-		{
-			"name": "Catering",
-			"tips": "Some tips about catering",
-			"percent": 0.25,
-			"items": ["Beverage & Bartenders","Food & Service"],
-			"add": true,
-			"per_person": true
-		
-		},
-		{
-			"name": "Dress & Attire",
-			"tips": "Some tips about Dress & Attire",
-			"percent": 0.08,
-			"items": ["Wedding Dress","Tuxedo","Bride's Accessories","Groom's Accessories"],
-			"add": true,
-			"per_person": false
-		
-		},
-		{
-			"name": "Flowers & Decorations",
-			"tips": "Some tips about Flowers & Decorations",
-			"percent": 0.05,
-			"items": ["Reception Decorations","Boutonnieres, Corsages","Bridal Bouquetes","Bridesmaid Bouquets"],
-			"add": true,
-			"per_person": false
-		
-		},
-		{
-			"name": "Photography & Videography",
-			"tips": "Some tips about Photography",
+			"name": "Attire & Beauty",
+			"tips": "Attire & Beauty",
 			"percent": 0.11,
-			"items": ["Engagement Photo","Formal Portrait","Wedding Album & Photos","Parent's Albums","Extra Prints","Photographer's Fee"],
+			"items": ["Bridal gown","Headpiece/veil","Alterations","Shoes","Undergarments","Jewelry","Accessories","Hair & Makeup","Groom's tuxedo/shoes/accessories","Bride's wedding band","Groom's wedding band"],
 			"add": true,
 			"per_person": false
+		
 		},
 		{
-			"name": "Music",
-			"tips": "Some tips about Music",
+			"name": "Ceremony",
+			"tips": "Ceremony",
 			"percent": 0.05,
-			"items": ["Band/DJ","Ceremony Musicians"],
+			"items": ["Church/ceremony site","Officiant","Organist","Musicians/soloist","Marriage license"],
 			"add": true,
 			"per_person": false
 		
 		},
 		{
-			"name": "Invitations",
-			"tips": "Some tips about Invitations",
-			"percent": 0.02,
-			"items": ["Ceremony Programs","Guest Book","Invitations & Reply Cards"],
+			"name": "Reception",
+			"tips": "Reception",
+			"percent": 0.40,
+			"items": ["Site rental","Caterer/food","Wedding cake & groom's cake","Beverages (wine/beer/liquor)","Champagne","Favors","Decorations (other than flowers)","Rental supplies (linens, china, etc.)","Additional services","Taxes and gratuities"],
 			"add": true,
 			"per_person": false
 		
 		},
 		{
-			"name": "Jewelry",
-			"tips": "Some tips about Jewelry",
-			"percent": 0.02,
-			"items": ["Engagement Ring","Wedding Bands"],
+			"name": "Photography",
+			"tips": "Photography",
+			"percent": 0.08,
+			"items": ["Engagement photo","Formal portrait","Wedding album & photos","Parent's Albums","Extra prints","Photographer's fee"],
+			"add": true,
+			"per_person": false
+		},
+		{
+			"name": "Videography",
+			"tips": "Videography",
+			"percent": 0.05,
+			"items": ["Ceremony","Reception","Extra copies of video"],
 			"add": true,
 			"per_person": false
 		
 		},
 		{
-			"name": "Cake",
-			"tips": "Some tips about Cake",
-			"percent": 0.02,
-			"items": ["Cake & Cutting Fee"],
+			"name": "Stationery",
+			"tips": "Stationery",
+			"percent": 0.04,
+			"items": ["Invitations","Announcements","Response cards","Thank-you notes","Ceremony programs","Calligraphy/addressing","Postage","Printed napkins","Guest book & pen"],
 			"add": true,
 			"per_person": false
 		
 		},
 		{
-			"name": "Planning",
-			"tips": "Some tips about Planning",
-			"percent": 0.02,
-			"items": ["Wedding Planner"],
+			"name": "Rehearsal dinner",
+			"tips": "Rehearsal dinner",
+			"percent": 0.00,
+			"items": ["Site rental","Food/caterer","Beverages (wine/beer/liquor)"],
+			"add": true,
+			"per_person": false
+		
+		},
+		{
+			"name": "Flowers",
+			"tips": "Flowers",
+			"percent": 0.08,
+			"items": ["Altar/huppah","Pew markers","Bride's bouquet","Bouquet preservation","Attendant's bouquets","Mother's corsages","Boutonnieres","Cake table","Buffet table","Head table(s)","Centerpieces for other tables","Decorating","Helpers/special guests","Toss bouquet"],
+			"add": true,
+			"per_person": false
+		
+		},
+		{
+			"name": "Music/Entertainment",
+			"tips": "Music/Entertainment",
+			"percent": 0.06,
+			"items": ["Ceremony","DJ","Live band"],
 			"add": true,
 			"per_person": false
 		
 		},
 		{
 			"name": "Transportation",
-			"tips": "Some tips about Transportation",
+			"tips": "Transportation",
+			"percent": 0.01,
+			"items": ["Limousine/carriage"],
+			"add": true,
+			"per_person": false
+		
+		},
+		{
+			"name": "Gifts & Favors",
+			"tips": "Gifts & Favors",
 			"percent": 0.02,
-			"items": ["Limo or Car Rental","Parking"],
+			"items": ["Attendant's gifts","Parent's gifts","Wedding favors","Tips for services"],
 			"add": true,
 			"per_person": false
 		
 		},
 		{
-			"name": "Beauty & Health",
-			"tips": "Some tips about Beauty & Health",
-			"percent": 0.01,
-			"items": ["Hair & Makeup"],
+			"name": "Honeymoon",
+			"tips": "Honeymoon",
+			"percent": 0.10,
+			"items": ["Transportation","Accomodations","Daily budget"],
 			"add": true,
 			"per_person": false
 		
 		},
 		{
-			"name": "Favor & Gifts",
-			"tips": "Some tips about Favor & Gifts",
-			"percent": 0.01,
-			"items": ["Gifts"],
-			"add": true,
-			"per_person": false
-		
-		},
-		{
-			"name": "Officiant",
-			"tips": "Some tips about Officiant",
-			"percent": 0.01,
-			"items": ["Officiant"],
+			"name": "Wedding Consultant",
+			"tips": "Wedding Consultant",
+			"percent": 0.00,
+			"items": [],
 			"add": true,
 			"per_person": false
 		
 		},
 		{
 			"name": "Miscellaneous",
-			"tips": "Some tips about Miscellaneous",
+			"tips": "Miscellaneous",
 			"percent": 0.02,
 			"items": [],
 			"add": true,
