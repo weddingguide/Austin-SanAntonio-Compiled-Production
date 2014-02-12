@@ -831,7 +831,7 @@ form button {font-size: 2em;}
   Specials Page Styles Desktop
 -------------------------------------------- */
 #content.special { width:100%;}
-.special-info { width:100%;}
+.special-info { width:75%; float:left;}
 		.special-info h1 {float:left; color:#016797; font-size:2em; margin:3px 5px 3px 10px;}
 		.special-info div {margin:14px 0 10px 10px; clear:both;}
 			.special-info div a {color:#d9a09f; }
@@ -839,16 +839,25 @@ form button {font-size: 2em;}
 				.special-info div span img {vertical-align: top;}
 		.special-info p {clear:both; float:none; margin: 10px;}
 
-.special-container {}
+.special-container {width:75%; float:left;}
 	.special-listing {background:#fff; display:inline-block; padding:10px;} 
 	.special-listing:nth-child(odd) {background:#F5F5F5;}
 	.special-listing img { width:150px; height:150px; float:left;}
-	.special-listing .specialInfo {float:left; width:780px; margin:0 0 0 10px;}
+	.special-listing .specialInfo {float:left; width:77%; margin:0 0 0 10px;}
 	.special-listing .specialInfo a h2 {color:black;}
 	.special-listing .specialInfo p:first-of-type {font-weight: bold; margin:0;}
 	.special-listing .specialInfo em:first-of-type {font-style: italic;}
 /*	.special-listing .specialInfo p {margin:0 0 1em 0;}*/
 	.special-listing .specialInfo a {font-weight: bold;}
+.sidebar {width:24.3%; float:right; text-align: center;}
+	.sidebar img {margin:10px auto;}
+	.specialsNav{text-align: left; list-style: none; margin:0; padding:0;}
+	.specialsNav li {margin:10px auto; width:200px; height:29px; box-shadow: 0 3px 3px 2px #ccc; border-radius: 25px; text-indent: 37px; text-align: left; font-size:12px;}
+		.specialsNav li a {line-height: 30px; color:black; font-weight: bold;}
+		.specialsNav li.pastEvents{background:url(../img/icons_sm_pltools_72ppi.png)no-repeat 15px 5px;}
+		.specialsNav li.likeOnFacebook{background:url(../img/icons_sm_pltools_72ppi.png)no-repeat 15px 5px;}
+		.specialsNav li.registerInfo{background:url(../img/icons_sm_pltools_72ppi.png)no-repeat 15px 5px;}
+		.specialsNav li.bookmark{background:url(../img/icons_sm_pltools_72ppi.png)no-repeat 15px 5px;}
 /* --------------------------------------------
   Specials Page Styles Tablet in landscape
 -------------------------------------------- */

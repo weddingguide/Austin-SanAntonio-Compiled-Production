@@ -11,12 +11,16 @@
    </header>
 
    <div id="content" class="special">     
-	  <div class="special-info">
+	  <aside class="sidebar">
+         <%@ include file="incl/specials_sideBar_incl.jsp" %>
+      </aside>
+      <div class="special-info">
          <%@ include file="incl/specials_specialsInfo_incl.jsp" %>
       </div>
       <div class="special-container">
          <%@ include file="incl/specials_specialContainer_incl.jsp" %>  
       </div>
+      
    </div>
 <footer>
    <%@ include file="incl/footer_incl.jsp" %>

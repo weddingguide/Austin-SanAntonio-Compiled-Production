@@ -8,7 +8,7 @@
 							Expires: <x:out select="$specialListing/@expires"/></p>
 							<x:set var="specialText" select="string($specialListing)"/>
 							<c:out value="${specialText}" escapeXml="false"/>
-							<p>(<a href="<x:out select="$specialListing/@profileURL"/>">more information</a>)</p>
+							<p>(<a href="<x:out select="$specialListing/@profileURL"/>/specials#pNav">more information</a>)</p>
 						</div>
 					</div>
 </x:forEach>
