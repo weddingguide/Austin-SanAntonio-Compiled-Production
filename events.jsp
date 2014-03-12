@@ -10,8 +10,11 @@
       <%@ include file="incl/header_incl.jsp" %>
    </header>
 
-   <div id="content" class="event">     
-	  <div class="event-info">
+   <div id="content" class="event">  
+      <aside class="sidebar">
+         <%@ include file="incl/events_sideBar_incl.jsp" %>
+      </aside>   
+	   <div class="event-info">
          <%@ include file="incl/events_eventsInfo_incl.jsp" %>
       </div>
       <div class="event-container">

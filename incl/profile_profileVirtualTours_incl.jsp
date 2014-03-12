@@ -1,6 +1,7 @@
 <h2>Virtual Tour</h2>
-<x:forEach select="$doc/WGBE/region/categories/category/profiles/profile" var="pVirtualTour">
+<p>Double click on the virtual tour to view it in full screen.</p>
+<x:forEach select="$doc/WGBE/region/categories/category/profiles/profile/virtualTours/virtualTour" var="pVirtualTour">
 	<div class="virtualTour-container">
-		<iframe src="http://texasweddingsltd.com/galleries/<x:out select="$pVirtualTour/@id"/>/vt1/_flash_html5/pano1.html"></iframe>
+		<iframe src="http://texasweddingsltd.com/galleries/<x:out select="$doc/WGBE/region/categories/category/profiles/profile/@id"/>/<x:out select="$pVirtualTour/@url"/>"></iframe>
 	</div>
 </x:forEach>

@@ -39,13 +39,17 @@
       <li class="handicapRoom"><a href="#">Handicap Rooms Available</a></li>
       <li class="kitchenettes"><a href="#">Kitchenettes</a></li>
       <li class="meetingRoom"><a href="#">Meeting Rooms</a></li>
+      <x:if select="$doc/WGBE/region/@name='Austin'">
       <li class="near6th"><a href="#">Near 6th Street in Austin</a></li>
+      </x:if>
+      <x:if select="$doc/WGBE/region/@name='San Antonio'">
       <li class="nearRiver"><a href="#">Near Riverwalk in San Antonio</a></li>
+      </x:if>
       <li class="north"><a href="#">North</a></li>
       <li class="northEast"><a href="#">Northeast</a></li>
       <li class="northWest"><a href="#">Northwest</a></li>
       <li class="petFriendly"><a href="#">Pet Friendly</a></li>
-      <li class="restaurantsNear"><a href="#">Restaurant Baron Site Nearby</a></li>
+      <li class="restaurantsNear"><a href="#">Restaurant/Bar On Site/Nearby</a></li>
       <li class="south"><a href="#">South</a></li>
       <li class="southEast"><a href="#">Southeast</a></li>
       <li class="southWest"><a href="#">Southwest</a></li>

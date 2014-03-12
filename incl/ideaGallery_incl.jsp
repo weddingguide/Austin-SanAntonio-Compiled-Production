@@ -12,47 +12,56 @@
 	<h1>Idea Gallery</h1>
 	<div>
 		<span>
-			<a href="javascript:history.go(-1)"><img src="img/arrow_pink.png" /> Back to Planning Tools</a>
+			<a href="planning-tools.jsp"><img src="img/arrow_pink.png" /> Back to Planning Tools</a>
 		</span>
 	</div>
 	<p>Our Idea Gallery lets you view amazing photographs, taken from Wedding Guide events and the pages of the Wedding Guide. To help you navigate the photos, simply click on the category you wish to view, then you're off!</p>
 </div>
 <div class="ig-container">
 	<div class="gallery-block">
-		<a href="javascript:popUp('http://www.texasweddingsltd.com/idea_gallery/a-bridal-gallery/index.html')">
+		<a href="#" onclick="javascript:popUp('http://www.texasweddingsltd.com/idea_gallery/a-bridal-gallery/index.html')">
 		<h1>Bridal</h1>
 		<img src="img/idea_thumb_bridal.jpg" /></a>
 	</div>
 	<div class="gallery-block">
-		<a href="javascript:popUp('http://www.texasweddingsltd.com/idea_gallery/a-bridalparty-gallery/index.html')">
+		<a href="#" onclick="javascript:popUp('http://www.texasweddingsltd.com/idea_gallery/a-bridalparty-gallery/index.html')">
 		<h1>Bridal Party</h1>
 		<img src="img/idea_thumb_brparty.jpg" /></a>
 	</div>
 	<div class="gallery-block">
-		<a href="javascript:popUp('http://www.texasweddingsltd.com/idea_gallery/a-cakes-gallery/index.html')">
+		<a href="#" onclick="javascript:popUp('http://www.texasweddingsltd.com/idea_gallery/a-cakes-gallery/index.html')">
 		<h1>Cakes</h1>
 		<img src="img/idea_thumb_cakes.jpg" /></a>
 	</div>
 	<div class="gallery-block">
-		<a href="javascript:popUp('http://www.texasweddingsltd.com/idea_gallery/a-details-gallery/index.html')">
+		<a href="#" onclick="javascript:popUp('http://www.texasweddingsltd.com/idea_gallery/a-details-gallery/index.html')">
 		<h1>Details</h1>
 		<img src="img/idea_thumb_details.jpg" /></a>
 	</div>
 	<div class="gallery-block">
-		<a href="javascript:popUp('http://www.texasweddingsltd.com/idea_gallery/a-decor-gallery/index.html')">
+		<a href="#" onclick="javascript:popUp('http://www.texasweddingsltd.com/idea_gallery/a-decor-gallery/index.html')">
 		<h1>Decor</h1>
 		<img src="img/idea_thumb_decor.jpg" /></a>
 	</div>
 	<div class="gallery-block">
-		<a href="javascript:popUp('http://www.texasweddingsltd.com/idea_gallery/a-flowers-gallery/index.html')">
+		<a href="#" onclick="javascript:popUp('http://www.texasweddingsltd.com/idea_gallery/a-flowers-gallery/index.html')">
 		<h1>Flowers</h1>
 		<img src="img/idea_thumb_flowers.jpg" /></a>
 	</div>
+	<x:if select="$doc/WGBE/region/@name='Austin'">
 	<div class="gallery-block">
-		<a href="javascript:popUp('http://www.texasweddingsltd.com/idea_gallery/a-locales-gallery/index.html')">
+		<a href="#" onclick="javascript:popUp('http://www.texasweddingsltd.com/idea_gallery/a-locales-gallery/index.html')">
 		<h1>Simply Austin</h1>
 		<img src="img/idea_thumb_austin.jpg" /></a>
 	</div>
+	</x:if>
+	<x:if select="$doc/WGBE/region/@name='San Antonio'">
+	<div class="gallery-block">
+		<a href="#" onclick="javascript:popUp('http://www.texasweddingsltd.com/idea_gallery/sa-locales-gallery/index.html')">
+		<h1>Simply San Antonio</h1>
+		<img src="img/idea_thumb_sa.jpg" /></a>
+	</div>
+	</x:if>
 	<div class="gallery-block" style="display:none;">
 		<a href="#">
 		<h1>Fashion Shoots</h1>

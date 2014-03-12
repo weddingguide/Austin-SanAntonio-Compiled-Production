@@ -1,23 +1,19 @@
 <div class="slider-container">
 	<div class="wmuSlider slider">        
     	<div class="wmuSliderWrapper">
-			<x:if select="$doc/WGBE/region/staticcontentitems/staticcontent/@name='Home Page Slider'">
-			  <x:forEach select="$doc/WGBE/region/staticcontentitems/staticcontent" var="planningTools">
-			    <x:if select="$planningTools/@name='Home Page Slider'">
+			  <x:forEach select="$doc/WGBE/region/sliders/slider" var="slider">
 			      <article>
-			      <x:set var="slider" select="string($planningTools/content)"/>
-			      <c:out value="${slider}" escapeXml="false"/>
+			      <x:set var="content" select="string($slider/content)"/>
+			      <c:out value="${content}" escapeXml="false"/>
 			      </article> 
-			    </x:if>
-			  </x:forEach>
-			</x:if>   		
+			  </x:forEach> 		
    		</div>
 	</div>
 </div>
 <script>
 $(function () {
     $('.slider').wmuSlider({
-    	 slideshow: true,
+    	 slideshow: <x:out select="$doc/WGBE/region/sliders/@disableRotation"/>,
          touch: true,
          animation: 'slide',
          navigationControl: true,

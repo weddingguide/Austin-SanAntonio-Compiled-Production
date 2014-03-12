@@ -3,7 +3,7 @@
 		<h1>Where to find a copy</h1>
 		<div>
 			<span>
-				<a href="javascript:history.go(-1)"><img src="img/arrow_pink.png" /> Back to Planning Tools</a>
+				<a href="planning-tools.jsp"><img src="img/arrow_pink.png" /> Back to Planning Tools</a>
 			</span>
 		</div>
 		<p>Browse below for a list of local places where you can find your very own copy!</p>

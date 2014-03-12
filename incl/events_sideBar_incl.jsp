@@ -14,8 +14,9 @@
         });
     });
 </script>
-				<img src="/img/specials.png"/>
+				<img src="/img/showandevents.png"/>
 					<ul class="specialsNav">
+						<li class="pastEvents"><a href="<x:out select="$doc/WGBE/region/@blog"/>/category/bridal-events/open-houses/">Photos of past events</a></li>
 						<li class="likeOnFacebook"><a href="<x:out select="$doc/WGBE/region/socialmedia/@facebook"/>">Like us on Facebook</a></li>
 						<li class="registerInfo"><a href="/register.jsp">Register to receive info</a></li>
 						<li class="bookmark"><a id="bookmarkme" href="#" title="bookmark this page">Bookmark this page</a></li>

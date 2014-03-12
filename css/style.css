@@ -117,7 +117,7 @@ body { background: #fff; font-family: 'Open Sans', sans-serif; color: #252525; t
 .wmuSlider {position: relative; overflow: hidden;}
 	.wmuSlider .wmuSliderWrapper {display: none;}
 		.wmuSlider .wmuSliderWrapper article {position: relative; text-align: center;}
-			.wmuSlider .wmuSliderWrapper article img {max-width: 100%; width: auto; height: auto;}
+			.wmuSlider .wmuSliderWrapper article img {max-width: 100%; height: auto;}
 /* mwuGallery */
 .wmuGallery .wmuGalleryImage {position: relative; text-align: center;}
 	.wmuGallery .wmuGalleryImage img {max-width: 100%; width: auto; height: auto;}
@@ -288,9 +288,9 @@ body { background: #fff; font-family: 'Open Sans', sans-serif; color: #252525; t
 			.promo-blocks {float:left; width:220px; max-width:220px; margin:0; max-height:440px; height:440px; overflow:hidden;}
 				.promo-blocks .promo1 {width:220px; margin:0 0 5px 0; height:220px; overflow:hidden;}
 		.bridal-blog {width:365px; height:440px; margin:5px 0; padding:0 10px;}
-		.special-offers {float:none; clear:both; width:96%; height:200px; padding:0 20px;}
-		.shows-events {float:none; clear:both; width:96%; height: 200px; padding:0 20px;}		
-		footer {height:auto;}
+		.special-offers {float:none; clear:both; width:96%; height:auto; padding:0 20px;}
+		.shows-events {float:none; clear:both; width:96%; height: auto; padding:0 20px;}		
+		footer {height:auto; width:99%;}
 		footer .site-map{clear:both; float:none; width:98%;}
 		footer .more-info{clear:both; float:none; width:98%;}
 }
@@ -497,7 +497,7 @@ body { background: #fff; font-family: 'Open Sans', sans-serif; color: #252525; t
 		.profileInfo div.profileFeatures {}
 			.profileInfo div.profileFeatures a {display:inline-block; font-size:3em; line-height: 25px; width:100%;}
 				.profileInfo div.profileFeatures a img { width:25px; height:auto;}
-		.profileInfo div.breadCrumbs {float:left; width:50%;}
+		.profileInfo div.breadCrumbs {float:left; width:55%;}
 			.profileInfo div.breadCrumbs a {font-size:3em; line-height: 25px; width:100%; margin:8px 10px;}
 				.profileInfo div.breadCrumbs a img {width:25px; height:auto;}
 		.profileInfo div.address {font-size: 3em;}
@@ -759,7 +759,7 @@ form button {font-size: 2em;}
 /* --------------------------------------------
   Profile Page Virtual Tour Styles Desktop
 -------------------------------------------- */
-.profileMedia .virtualTour-container {background:#e8ecf2; display:inline-block; width:100%; clear:both; margin:5px auto;}
+.profileMedia .virtualTour-container {background:#e8ecf2; display:inline-block; width:100%; clear:both; margin:5px auto; text-align: center;}
 .profileMedia .virtualTour-container:nth-child(odd){background:white;}
 	.virtualTour-container h2 {font-size:1em; color:black; margin:1px 10px;}
 	.virtualTour-container p {width:auto !important; padding:10px !important; text-align:left !important; background:inherit !important;}
@@ -785,7 +785,7 @@ form button {font-size: 2em;}
   Events Page Styles Desktop
 -------------------------------------------- */
 #content.event { width:100%;}
-.event-info { width:100%;}
+.event-info { width:75%; float:left;}
 		.event-info h1 {float:left; color:#016797; font-size:2em; margin:3px 5px 3px 10px;}
 		.event-info div {margin:14px 0 10px 10px; clear:both;}
 		.event-info div a {color:#d9a09f; }
@@ -793,16 +793,25 @@ form button {font-size: 2em;}
 			.event-info div span img {vertical-align: top;}
 		.event-info p {clear:both; float:none; margin: 10px;}
 
-.event-container {}
-	.event-listing {background:#fff; display:inline-block; padding:10px;} 
+.event-container {width:73%; float:left; padding:10px;}
+	.event-listing {background:#fff; display:inline-block; width:100%;} 
 	.event-listing:nth-child(odd) {background:#F5F5F5;}
 	.event-listing img { width:150px; height:150px; float:left;}
-	.event-listing .eventInfo {float:left; width:780px; margin:0 0 0 10px;}
+	.event-listing .eventInfo {float:left; width:72%; margin:0 0 0 10px;}
 	.event-listing .eventInfo a h2 {color:black;}
 	.event-listing .eventInfo p:first-of-type {font-weight: bold; margin:0;}
 	.event-listing .eventInfo em:first-of-type {font-style: italic;}
 /*	.event-listing .eventInfo p {margin:0 0 1em 0;}*/
 	.event-listing .eventInfo a {font-weight: bold;}
+.sidebar {width:24.3%; float:right; text-align: center;}
+	.sidebar img {margin:10px auto;}
+	.eventsNav{text-align: left; list-style: none; margin:0; padding:0;}
+	.eventsNav li {margin:10px auto; width:200px; height:29px; box-shadow: 0 3px 3px 2px #ccc; border-radius: 25px; text-indent: 37px; text-align: left; font-size:12px;}
+		.eventsNav li a {line-height: 30px; color:black; font-weight: bold;}
+		.eventsNav li.pastEvents{background:url(../img/icons_sm_pltools_72.png)no-repeat 10px -115px;}
+		.eventsNav li.likeOnFacebook{background:url(../img/icons_sm_pltools_72.png)no-repeat 10px -35px;}
+		.eventsNav li.registerInfo{background:url(../img/icons_sm_pltools_72.png)no-repeat 10px -75px;}
+		.eventsNav li.bookmark{background:url(../img/icons_sm_pltools_72.png)no-repeat 10px 5px;}	
 
 /* --------------------------------------------
   Events Page Styles Tablet in landscape
@@ -839,8 +848,8 @@ form button {font-size: 2em;}
 				.special-info div span img {vertical-align: top;}
 		.special-info p {clear:both; float:none; margin: 10px;}
 
-.special-container {width:75%; float:left;}
-	.special-listing {background:#fff; display:inline-block; padding:10px;} 
+.special-container {width:75%; float:left; padding:10px;}
+	.special-listing {background:#fff; display:inline-block; width:100%;} 
 	.special-listing:nth-child(odd) {background:#F5F5F5;}
 	.special-listing img { width:150px; height:150px; float:left;}
 	.special-listing .specialInfo {float:left; width:77%; margin:0 0 0 10px;}
@@ -854,10 +863,10 @@ form button {font-size: 2em;}
 	.specialsNav{text-align: left; list-style: none; margin:0; padding:0;}
 	.specialsNav li {margin:10px auto; width:200px; height:29px; box-shadow: 0 3px 3px 2px #ccc; border-radius: 25px; text-indent: 37px; text-align: left; font-size:12px;}
 		.specialsNav li a {line-height: 30px; color:black; font-weight: bold;}
-		.specialsNav li.pastEvents{background:url(../img/icons_sm_pltools_72.png)no-repeat 10px 5px;}
+		.specialsNav li.pastEvents{background:url(../img/icons_sm_pltools_72.png)no-repeat 10px -115px;}
 		.specialsNav li.likeOnFacebook{background:url(../img/icons_sm_pltools_72.png)no-repeat 10px -35px;}
 		.specialsNav li.registerInfo{background:url(../img/icons_sm_pltools_72.png)no-repeat 10px -75px;}
-		.specialsNav li.bookmark{background:url(../img/icons_sm_pltools_72.png)no-repeat 10px -115px;}
+		.specialsNav li.bookmark{background:url(../img/icons_sm_pltools_72.png)no-repeat 10px 5px;}
 /* --------------------------------------------
   Specials Page Styles Tablet in landscape
 -------------------------------------------- */
@@ -879,6 +888,7 @@ form button {font-size: 2em;}
 	.special-info div span img { vertical-align: middle; width:20%; float:left; height:auto;}
 	.special-info div span {font-size:3em; line-height: 0.5em; padding:0 0 0 12px; margin:0;}
 	.special-info p {}
+
 }
 
 /* --------------------------------------------
@@ -962,7 +972,7 @@ form button {font-size: 2em;}
 	.planning-tools .pt-container {margin:10px; text-align: center; background:#f5f5f5; display:inline-block;}
 		.pt-container .tool-block {float:left; margin:20px; display:inline-block; width:270px; height:235px;}
 					.tool-block>a {color:black;}
-					.tool-block a h1 { font-size: 1.3em;  text-indent:85px; }
+					.tool-block a h1 { font-size: 1.3em;  padding-left:85px; }
 					.tool-block a h1.wGuide {background:url(../img/pltools_icons.png) no-repeat 60px -1px; text-align: left;}
 					.tool-block a h1.iGallery {background:url(../img/pltools_icons.png) no-repeat 60px -40px; text-align: left;}
 					.tool-block a h1.aPage {background:url(../img/pltools_icons.png) no-repeat 60px -80px; text-align: left;}
@@ -1014,7 +1024,45 @@ form button {font-size: 2em;}
 			.tool-block a h1.bCalculator {background:url(../img/pltools_icons_150ppi.png) no-repeat 0px -420px;}
 			.tool-block a h1.gSearch {background:url(../img/pltools_icons_150ppi.png) no-repeat 0px -505px;}
 }
+/* --------------------------------------------
+  Planning Tools Navigation Styles Desktop
+-------------------------------------------- */
+	aside.planningToolsNav {width:25%; background:#f5f5f5; text-align: center; float:right;}
+		.planningToolsNav .ptNavigation {text-align: left; list-style: none; margin:0; padding:0;}
+		.planningToolsNav img {margin: 10px 0 17px;}
+			.ptNavigation li {margin:10px auto; width:200px; min-height:30px; box-shadow: 0 3px 3px 2px #ccc; border-radius: 25px; text-align: left;}
+				.ptNavigation li a {color:black; font-weight: bold; display:block; padding:5px 0 5px 35px;}
+			span.icon {height: 30px; width: 30px; display: block; margin: 0; padding: 0 5px; float: left;}
+			span.wGuide {background:url(../img/pltools_icons.png)no-repeat 10px 5px;}
+			span.iGallery {background:url(../img/pltools_icons.png)no-repeat 10px -35px;}
+			span.aPage {background:url(../img/pltools_icons.png) no-repeat 10px -75px;}
+			span.cLists {background:url(../img/pltools_icons.png) no-repeat 10px -115px;}
+			span.vDirectory {background:url(../img/pltools_icons.png) no-repeat 10px -155px;}
+			span.bCalculator {background:url(../img/pltools_icons.png) no-repeat 10px -195px;}
+			span.gSearch {background:url(../img/pltools_icons.png) no-repeat 10px -235px;}
 
+/* --------------------------------------------
+  Planning Tools Navigation Styles Tablet
+-------------------------------------------- */			
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 1){}
+
+/* --------------------------------------------
+  Planning Tools Navigation Style Mobile
+-------------------------------------------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px), only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation : landscape), only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait), only screen and (min-device-width : 320px) and (max-device-width : 480px), only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape), only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) {
+	aside.planningToolsNav {float:none; width:100%; clear:both; padding:50px 0;}
+		.planningToolsNav img {width:60%;}
+		.ptNavigation li { width:95%; height:100px; border-radius: 75px; margin:20px 0;}
+			.ptNavigation li a {line-height:100px; font-size: 3em;}
+			span.icon {height: 100px; width: 55px; display: block; margin: 0; padding: 0 0 0 30px; line-height: 1; position: relative; float: left;}
+			span.wGuide {background:url(../img/pltools_icons_150ppi.png)no-repeat 35px 30px;}
+			span.iGallery {background:url(../img/pltools_icons_150ppi.png)no-repeat 35px -55px;}
+			span.aPage {background:url(../img/pltools_icons_150ppi.png) no-repeat 35px -135px;}
+			span.cLists {background:url(../img/pltools_icons_150ppi.png) no-repeat 35px -225px;}
+			span.vDirectory {background:url(../img/pltools_icons_150ppi.png) no-repeat 35px -305px;}
+			span.bCalculator {background:url(../img/pltools_icons_150ppi.png) no-repeat 35px -390px;}
+			span.gSearch {background:url(../img/pltools_icons_150ppi.png) no-repeat 35px -475px;}
+}
 /* --------------------------------------------
   Idea Gallery Page Styles Desktop
 -------------------------------------------- */
@@ -1027,17 +1075,6 @@ form button {font-size: 2em;}
 				.ig-info div span a {color:#d9a09f;}
 		.ideaGallery .gallery-block {float:left; margin:20px; display:inline-block; width:200px; height:175px; text-align: center;}
 			.gallery-block a {color:black;}
-	aside.planningToolsNav {width:25%; background:#f5f5f5; text-align: center; float:right;}
-		.planningToolsNav .ptNavigation {text-align: left; list-style: none; margin:0; padding:0;}
-			.ptNavigation li {margin:10px auto; width:200px; height:29px; box-shadow: 0 3px 3px 2px #ccc; border-radius: 25px; text-indent: 45px; text-align: left;}
-				.ptNavigation li a {line-height: 30px; color:black; font-weight: bold;}
-			.ptNavigation li.wGuide {background:url(../img/pltools_icons.png)no-repeat 15px 5px;}
-			.ptNavigation li.iGallery {background:url(../img/pltools_icons.png)no-repeat 15px -35px;}
-			.ptNavigation li.aPage {background:url(../img/pltools_icons.png) no-repeat 15px -75px;}
-			.ptNavigation li.cLists {background:url(../img/pltools_icons.png) no-repeat 15px -115px;}
-			.ptNavigation li.vDirectory {background:url(../img/pltools_icons.png) no-repeat 15px -155px;}
-			.ptNavigation li.bCalculator {background:url(../img/pltools_icons.png) no-repeat 15px -195px;}
-			.ptNavigation li.gSearch {background:url(../img/pltools_icons.png) no-repeat 15px -235px;}
 
 /* --------------------------------------------
   Idea Gallery Page Styles Tablet in landscape
@@ -1053,17 +1090,6 @@ form button {font-size: 2em;}
 		.ideaGallery .gallery-block {float:left !important; margin:20px !important; display:inline-block !important; width:200px !important; height:175px !important; text-align: center !important; clear:none !important;}
 			.gallery-block a h1 {font-size: 1em !important;}
 			.gallery-block a img {width:auto !important;}
-	aside.planningToolsNav {width:25% !important; background:#f5f5f5 !important; text-align: center; float:right !important; clear:none !important;}
-		.planningToolsNav .ptNavigation {text-align: left; list-style: none; margin:0; padding:0;}
-			.ptNavigation li {margin:10px auto !important; width:200px !important; height:29px !important; box-shadow: 0 3px 3px 2px #ccc ; border-radius: 25px !important; text-indent: 45px !important; text-align: left;}
-				.ptNavigation li a {line-height: 30px !important; color:black; font-weight: bold; font-size: 1em !important;}
-			.ptNavigation li.wGuide {background:url(../img/pltools_icons.png)no-repeat 15px 5px !important;}
-			.ptNavigation li.iGallery {background:url(../img/pltools_icons.png)no-repeat 15px -35px;}
-			.ptNavigation li.aPage {background:url(../img/pltools_icons.png) no-repeat 15px -75px !important;}
-			.ptNavigation li.cLists {background:url(../img/pltools_icons.png) no-repeat 15px -115px !important;}
-			.ptNavigation li.vDirectory {background:url(../img/pltools_icons.png) no-repeat 15px -155px !important;}
-			.ptNavigation li.bCalculator {background:url(../img/pltools_icons.png) no-repeat 15px -195px !important;}
-			.ptNavigation li.gSearch {background:url(../img/pltools_icons.png) no-repeat 15px -235px !important;}
 }
 
 /* --------------------------------------------
@@ -1083,17 +1109,7 @@ form button {font-size: 2em;}
 		.ideaGallery .ig-container .gallery-block {width:45%; height:auto;}
 			.gallery-block a h1 {font-size: 3em;}
 			.gallery-block a img {width:100%;}
-	aside.planningToolsNav {float:none; width:100%; clear:both; padding:50px 0;}
-		.planningToolsNav img {width:60%;}
-		.ptNavigation li { width:95%; height:100px; border-radius: 75px; text-indent: 100px; margin:20px 0;}
-			.ptNavigation li a {line-height:100px; font-size: 3em;}
-			.ptNavigation li.wGuide {background:url(../img/pltools_icons_150ppi.png)no-repeat 45px 30px;}
-			.ptNavigation li.iGallery {background:url(../img/pltools_icons_150ppi.png)no-repeat 45px -55px;}
-			.ptNavigation li.aPage {background:url(../img/pltools_icons_150ppi.png) no-repeat 45px -135px;}
-			.ptNavigation li.cLists {background:url(../img/pltools_icons_150ppi.png) no-repeat 45px -225px;}
-			.ptNavigation li.vDirectory {background:url(../img/pltools_icons_150ppi.png) no-repeat 45px -305px;}
-			.ptNavigation li.bCalculator {background:url(../img/pltools_icons_150ppi.png) no-repeat 45px -390px;}
-			.ptNavigation li.gSearch {background:url(../img/pltools_icons_150ppi.png) no-repeat 45px -475px;}
+
 }
 
 /* --------------------------------------------
@@ -1106,18 +1122,6 @@ form button {font-size: 2em;}
 			.gs-info p {margin:1em auto; clear:both; float:none;}
 			.gs-info span {display:inline-block; float:left; height:2em; padding:0;}
 				.gs-info div span a {color:#d9a09f;}
-	aside.planningToolsNav {width:25%; background:#f5f5f5; text-align: center; float:right;}
-		.planningToolsNav .ptNavigation {text-align: left; list-style: none; margin:0; padding:0;}
-		.planningToolsNav img {margin: 10px 0 17px;}
-			.ptNavigation li {margin:10px auto; width:200px; height:29px; box-shadow: 0 3px 3px 2px #ccc; border-radius: 25px; text-indent: 45px; text-align: left;}
-				.ptNavigation li a {line-height: 30px; color:black; font-weight: bold;}
-			.ptNavigation li.wGuide {background:url(../img/pltools_icons.png)no-repeat 15px 5px;}
-			.ptNavigation li.iGallery {background:url(../img/pltools_icons.png)no-repeat 15px -35px;}
-			.ptNavigation li.aPage {background:url(../img/pltools_icons.png) no-repeat 15px -75px;}
-			.ptNavigation li.cLists {background:url(../img/pltools_icons.png) no-repeat 15px -115px;}
-			.ptNavigation li.vDirectory {background:url(../img/pltools_icons.png) no-repeat 15px -155px;}
-			.ptNavigation li.bCalculator {background:url(../img/pltools_icons.png) no-repeat 15px -195px;}
-			.ptNavigation li.gSearch {background:url(../img/pltools_icons.png) no-repeat 15px -235px;}
 
 /* --------------------------------------------
   Idea Gallery Page Styles Tablet in landscape
@@ -1133,17 +1137,6 @@ form button {font-size: 2em;}
 		.ideaGallery .gallery-block {float:left !important; margin:20px !important; display:inline-block !important; width:200px !important; height:175px !important; text-align: center !important; clear:none !important;}
 			.gallery-block a h1 {font-size: 1em !important;}
 			.gallery-block a img {width:auto !important;}
-	aside.planningToolsNav {width:25% !important; background:#f5f5f5 !important; text-align: center; float:right !important; clear:none !important;}
-		.planningToolsNav .ptNavigation {text-align: left; list-style: none; margin:0; padding:0;}
-			.ptNavigation li {margin:10px auto !important; width:200px !important; height:29px !important; box-shadow: 0 3px 3px 2px #ccc ; border-radius: 25px !important; text-indent: 45px !important; text-align: left;}
-				.ptNavigation li a {line-height: 30px !important; color:black; font-weight: bold; font-size: 1em !important;}
-			.ptNavigation li.wGuide {background:url(../img/pltools_icons.png)no-repeat 15px 5px !important;}
-			.ptNavigation li.iGallery {background:url(../img/pltools_icons.png)no-repeat 15px -35px;}
-			.ptNavigation li.aPage {background:url(../img/pltools_icons.png) no-repeat 15px -75px !important;}
-			.ptNavigation li.cLists {background:url(../img/pltools_icons.png) no-repeat 15px -115px !important;}
-			.ptNavigation li.vDirectory {background:url(../img/pltools_icons.png) no-repeat 15px -155px !important;}
-			.ptNavigation li.bCalculator {background:url(../img/pltools_icons.png) no-repeat 15px -195px !important;}
-			.ptNavigation li.gSearch {background:url(../img/pltools_icons.png) no-repeat 15px -235px !important;}
 }
 
 /* --------------------------------------------
@@ -1163,17 +1156,6 @@ form button {font-size: 2em;}
 		.ideaGallery .ig-container .gallery-block {width:45%; height:auto;}
 			.gallery-block a h1 {font-size: 3em;}
 			.gallery-block a img {width:100%;}
-	aside.planningToolsNav {float:none; width:100%; clear:both; padding:50px 0;}
-		.planningToolsNav img {width:60%;}
-		.ptNavigation li { width:95%; height:100px; border-radius: 75px; text-indent: 100px; margin:20px 0;}
-			.ptNavigation li a {line-height:100px; font-size: 3em;}
-			.ptNavigation li.wGuide {background:url(../img/pltools_icons_150ppi.png)no-repeat 45px 30px;}
-			.ptNavigation li.iGallery {background:url(../img/pltools_icons_150ppi.png)no-repeat 45px -55px;}
-			.ptNavigation li.aPage {background:url(../img/pltools_icons_150ppi.png) no-repeat 45px -135px;}
-			.ptNavigation li.cLists {background:url(../img/pltools_icons_150ppi.png) no-repeat 45px -225px;}
-			.ptNavigation li.vDirectory {background:url(../img/pltools_icons_150ppi.png) no-repeat 45px -305px;}
-			.ptNavigation li.bCalculator {background:url(../img/pltools_icons_150ppi.png) no-repeat 45px -390px;}
-			.ptNavigation li.gSearch {background:url(../img/pltools_icons_150ppi.png) no-repeat 45px -475px;}
 }
 /* --------------------------------------------
   Venue Directory Page Styles Desktop
@@ -1335,6 +1317,7 @@ form button {font-size: 2em;}
 		.articlesPage .articles-info {margin:10px;}
 			.articles-info h1 {font-size: 2em; color:#016797; clear:both;}
 			.articles-info p {margin:10px auto; clear:both; float:none;}
+			.articles-info div {margin:10px 0;}
 				.articles-info div span {display:inline-block; height:2em; padding:0; clear:both;}
 					.articles-info div span a {color:#d9a09f;}
 		.articles-nav {margin:10px; display: inline-block; width:90%;}
@@ -1344,20 +1327,21 @@ form button {font-size: 2em;}
 				.articles-nav ul li:last-child {border-right:0;}
 					.articles-nav ul li a {color:black; font-size: 0.78em;}
 		.articles-container {clear:both; margin:10px 0 0 0; display:inline-block;}
-			.articles-container div {padding:5px 10px;}
 			.articles-container {padding:5px 10px;}
 			.post-container {margin:10px;}
+#content > div > div.articles-container > p {margin-bottom: 1em;}
 				.post-container h1 { font-size:1.5em; color:#016797; clear:both;}
 			.article-block {background:#e8ecf2; display:inline-block; width:98%;}
 			.article-block:nth-child(even){background:white;}
 				.article-block a img {float:left; margin:10px;}
 				.article-block ul {margin:0 0 0 160px; list-style: none;}
-					.article-block ul li {padding:1px 0; float:left; width:280px;}
+					.article-block ul li {padding:1px 0; float:left; width:100%;}
 					.article-block ul li:before {content:'~ ';}
 						.article-block ul li a {font-size:0.9em;}
-.wp-caption {border: 10px solid white; box-shadow: 0px 0px 15px #888; text-align: center; margin:15px 0;}
-.alignleft {float: left; margin:0 15px; padding: 0px;}
-.alignright {float: right; margin:0 15px; padding: 0px;}
+.wp-caption {border: 10px solid white; box-shadow: 0px 0px 5px #888; text-align: center; margin:15px 0;}
+.wp-caption-text{margin:10px 0 0 0;}
+.alignleft {float: left; margin:0 15px 0 0; padding: 0px;}
+.alignright {float: right; margin:0 0 0 15px; padding: 0px;}
 
 /* --------------------------------------------
   Articles Page Styles Tablet in landscape

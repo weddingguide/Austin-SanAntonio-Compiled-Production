@@ -2,7 +2,10 @@
       $(function () {
          $('.gallery').wmuSlider({
                touch: true,
-               animation: 'slide'
+               animation: 'slide',
+               <x:if select="$doc/WGBE/region/categories/category/profiles/profile/images/@layout = 'profile-1'">
+               slideshow: false,
+               </x:if>
          });
       });   
       </script>
