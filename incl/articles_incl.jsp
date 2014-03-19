@@ -2,7 +2,7 @@
 	<h1>Articles</h1>
 	<div>
 		<span>
-			<a href="javascript:history.go(-1)"><img src="img/arrow_pink.png" /> Back to Planning Tools</a>
+			<a href="planning-tools.jsp"><img src="img/arrow_pink.png" /> Back to Planning Tools</a>
 		</span>
 	</div>
 	<p>Read through the articles below for helpful information regarding almost every aspect of your wedding, from questions of etiquette to the fine details of planning your perfect day. Feel free to contact us at <a href="mailto:weddingguide@texasweddings.com">weddingguide@texasweddings.com</a> if you have any questions about an article, or something that isn't covered below. Stay tuned for more articles!</p>

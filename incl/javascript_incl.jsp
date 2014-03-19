@@ -1,6 +1,6 @@
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
       <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
       <!-- Slider JS -->
-      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
       <script src="http://austin.texasweddingsltd.net/js/jquery.touchSwipe.min.js"></script>
       <script src="http://austin.texasweddingsltd.net/js/jquery.wmuSlider.js"></script>
       <script src="http://austin.texasweddingsltd.net/js/jquery.wmuGallery.js"></script>

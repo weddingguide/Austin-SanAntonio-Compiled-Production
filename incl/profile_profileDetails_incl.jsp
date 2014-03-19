@@ -107,7 +107,7 @@
 			<li class="petFriendly"><span>Pet Friendly</span></li>
 			</x:if>
 			<x:if select="$pDetails/@RestaurantBaronSiteNearby !='N'">
-			<li class="restaurantsNear"><span>Restaurant Baron Site Nearby</span></li>
+			<li class="restaurantsNear"><span>Restaurant/Bar On Site/Nearby</span></li>
 			</x:if>
 			<x:if select="$pDetails/@South !='N'">
 			<li class="south"><span>South</span></li>

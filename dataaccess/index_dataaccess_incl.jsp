@@ -9,9 +9,9 @@
       wgbeDataAccessCtrl.randomizeSpecials       = true;
       wgbeDataAccessCtrl.randomizeEvents         = true;
       wgbeDataAccessCtrl.blogPostCount           = 3;
-
       wgbeDataAccessCtrl.inclStaticContent       = true;
-      String[] staticContentNames                = { "Home Page Main",
+      wgbeDataAccessCtrl.inclSliders             = true;
+      String[] staticContentNames                = { "Home Page Slider",
                                                      "Promo Block 1",
                                                      "Promo Block 2",
                                                      "Promo Block 3",

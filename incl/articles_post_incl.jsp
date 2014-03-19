@@ -2,7 +2,7 @@
 	<h1><x:out select="$doc/WGBE/region/articleSets/articles/article/@title"/></h1>
 	<div>
 		<span>
-			<a href="javascript:history.go(-1)"><img src="img/arrow_pink.png" /> Back to Planning Tools</a>
+			<a href="planning-tools.jsp"><img src="img/arrow_pink.png" /> Back to Planning Tools</a>
 		</span>
 	</div>
 </div>

@@ -1,4 +1,6 @@
 <link type="text/css" rel="stylesheet" href="/css/printable.css" media="print" />
+<link type="text/css" rel="stylesheet" href="/css/layout.css" media="screen,print" />
+
       <script type="text/javascript">
             
             $(document).ready(function(){
@@ -11,16 +13,9 @@
             });
   
       </script>
-<div class="hide">
-<x:if select="$doc/WGBE/region/staticcontentitems/staticcontent/@name='Idea/Photo Gallery'">
-	<x:forEach select="$doc/WGBE/region/staticcontentitems/staticcontent" var="planningTools">
-		<x:if select="$planningTools/@name='Idea/Photo Gallery'">
-			<x:set var="ideaGallery" select="string($planningTools/content)"/>
-			<c:out value="${ideaGallery}" escapeXml="false"/>
-		</x:if>
-	</x:forEach>
-</x:if>
-</div>
+      <style>
+        .container .row-fluid.calc-body .accordion-group .accordion-heading .tips-controls {display:none;}
+      </style>
 <div class="pt-info">
     <h1>Budget Calculator</h1>
     <div>

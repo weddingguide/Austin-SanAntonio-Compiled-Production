@@ -180,7 +180,7 @@ BridalCalc.prototype.build_category				=	function(category) {
 	var body = $('<div id="" class="accordion-body collapse in"></div>');
 	var inner = $('<div class="accordion-inner"></div>');
 
-	var tips_controls = $('<div class="tips-controls"></div>');
+	var tips_controls = $('<div class="tips-controls style="display:none;"></div>');
 	var tips_show = $('<div style="display:none"  class="tips-show">+ Show tips</div>');
 	var tips_hide = $('<div style="display:none" class="tips-hide">- Hide tips</div>');
 
