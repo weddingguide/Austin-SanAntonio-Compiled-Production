@@ -38,10 +38,10 @@
                   <x:if select="$doc/WGBE/region/categories/category/profiles/profile/videoclips/video">
                      <x:choose>
                         <x:when select="$doc/WGBE/region/categories/category/profiles/profile/videoclips/video/@source='External URL'">
-                           <li class="videos"><a href="http://<x:out select="$doc/WGBE/region/categories/category/profiles/profile/videoclips/video/@id"/>">Videos</a></li>
+                           <li class="videos"><a href="http://<x:out select="$doc/WGBE/region/categories/category/profiles/profile/videoclips/video/@id"/>" target="_blank">Videos</a></li>
                         </x:when>
                         <x:when select="$doc/WGBE/region/categories/category/profiles/profile/videoclips/video/@source!='External URL'">
-                           <li class="videos"><a href="/<x:out select="$doc/WGBE/region/categories/category/profiles/profile/@urlcompliantvendorname"/>/videos#pNav">Videos</a></li>
+                           <li class="videos"><a href="/<x:out select="$doc/WGBE/region/categories/category/profiles/profile/@urlcompliantvendorname"/>/videos#pNav" target="_blank">Videos</a></li>
                         </x:when>
                      </x:choose>
                   </x:if>
@@ -52,25 +52,25 @@
                      <li class="virtual-tour"><a href="/<x:out select="$doc/WGBE/region/categories/category/profiles/profile/@urlcompliantvendorname"/>/virtual-tours#pNav">Virtual Tour</a></li>
                   </x:if>
                   <x:if select="$doc/WGBE/region/categories/category/profiles/profile/@facebook">
-                     <li class="facebook"><a href="http://<x:out select="$doc/WGBE/region/categories/category/profiles/profile/@facebook"/>">Facebook</a></li>
+                     <li class="facebook"><a href="http://<x:out select="$doc/WGBE/region/categories/category/profiles/profile/@facebook"/>" target="_blank">Facebook</a></li>
                   </x:if>
                   <x:if select="$doc/WGBE/region/categories/category/profiles/profile/@twitter">
-                     <li class="twitter"><a href="http://<x:out select="$doc/WGBE/region/categories/category/profiles/profile/@twitter"/>">Twitter</a></li>
+                     <li class="twitter"><a href="http://<x:out select="$doc/WGBE/region/categories/category/profiles/profile/@twitter"/>" target="_blank">Twitter</a></li>
                   </x:if>
                   <x:if select="$doc/WGBE/region/categories/category/profiles/profile/@pinterest">
-                     <li class="pinterest"><a href="http://<x:out select="$doc/WGBE/region/categories/category/profiles/profile/@pinterest"/>">Pinterest</a></li>
+                     <li class="pinterest"><a href="http://<x:out select="$doc/WGBE/region/categories/category/profiles/profile/@pinterest"/>" target="_blank">Pinterest</a></li>
                   </x:if>
                   <x:if select="$doc/WGBE/region/categories/category/profiles/profile/@googleplus">
-                     <li class="googleplus"><a href="http://<x:out select="$doc/WGBE/region/categories/category/profiles/profile/@googleplus"/>">Google&plus;</a></li>
+                     <li class="googleplus"><a href="http://<x:out select="$doc/WGBE/region/categories/category/profiles/profile/@googleplus"/>" target="_blank">Google&plus;</a></li>
                   </x:if>
                   <x:if select="$doc/WGBE/region/categories/category/profiles/profile/@instagram">
-                     <li class="instagram"><a href="http://<x:out select="$doc/WGBE/region/categories/category/profiles/profile/@instagram"/>">Instagram</a></li>
+                     <li class="instagram"><a href="http://<x:out select="$doc/WGBE/region/categories/category/profiles/profile/@instagram"/>" target="_blank">Instagram</a></li>
                   </x:if>
-                  <x:if select="$doc/WGBE/region/categories/category/profiles/profile/@blog">
-                     <li class="blog"><a href="http://<x:out select="$doc/WGBE/region/categories/category/profiles/profile/@blog"/>">Blog</a></li>
+                  <x:if select="$doc/WGBE/region/categories/category/profiles/profile/@blogURL">
+                     <li class="blog"><a href="http://<x:out select="$doc/WGBE/region/categories/category/profiles/profile/@blogURL"/>" target="_blank">Blog</a></li>
                   </x:if>
                   <x:if select="$doc/WGBE/region/categories/category/profiles/profile/@linkedin">
-                     <li class="linkedin"><a href="http://<x:out select="$doc/WGBE/region/categories/category/profiles/profile/@linkedin"/>">Linked In</a></li>
+                     <li class="linkedin"><a href="http://<x:out select="$doc/WGBE/region/categories/category/profiles/profile/@linkedin"/>" target="_blank">Linked In</a></li>
                   </x:if>
                   <x:if select="$doc/WGBE/region/categories/category/profiles/profile/@myspace">
                      <li class="myspace"><a href="http://<x:out select="$doc/WGBE/region/categories/category/profiles/profile/@myspace"/>">Myspace</a></li>
