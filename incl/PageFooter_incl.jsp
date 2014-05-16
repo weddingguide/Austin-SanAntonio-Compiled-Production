@@ -23,8 +23,5 @@
 <%
       }
 %>
-
-   <%@ include file="googleRemarketing_incl.jsp" %>
-
    </body>
 </html>
