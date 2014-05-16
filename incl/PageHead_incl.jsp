@@ -32,8 +32,8 @@
    </head>
    
    <body onLoad="randomizeBanners();">
+      <%@ include file="googleRemarketing_incl.jsp" %>
    <div class="banners">
       <%@ include file="AdHeader_incl.jsp" %>
    </div>
-      <%@ include file="googleRemarketing_incl.jsp" %>
       <!--[if lte IE 8]> <div style=' clear: both; height: 59px; width:100%; text-align:center; padding:0 auto; margin: 0 auto; position: absolute; top:0;'> <a href="http://www.microsoft.com/windows/internet-explorer/default.aspx"><img src="http://www.ie6countdown.com/images/upgrade.jpg" border="0" height="42" width="820" alt="" /></a></div> <![endif]-->
