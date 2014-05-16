@@ -1,5 +1,4 @@
    <%@ include file="googleAnalytics1_incl.jsp" %>
-   <%@ include file="googleRemarketing_incl.jsp" %>
    <%@ include file="footerJs_incl.jsp" %>
 <%    if (showXML.equals( "true" ) )
       {
@@ -24,6 +23,8 @@
 <%
       }
 %>
+
+   <%@ include file="googleRemarketing_incl.jsp" %>
 
    </body>
 </html>
