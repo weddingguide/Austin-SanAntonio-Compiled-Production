@@ -12,7 +12,7 @@
 	<div class="wg-virtual">
 	<p>Click on the book below to view the current issue of the Wedding Guide online.</p>
 		<div data-configid="2171588/9356648" style="width: 400px; height: 312px;" class="issuuembed"></div><script type="text/javascript" src="//e.issuu.com/embed.js" async="true"></script>
-		<a target="_blank" class="mobile-icon" href="http://online.publicationprinters.com/launch.aspx?eid=cf8b9e6f-3753-40e8-9c20-cb02045448cf"><img src="/img/wg_thumb2.jpg" /></a>
+		<a target="_blank" class="mobile-icon" href="http://issuu.com/sd2828/docs/sa51-150dpi_issuu?e=2171588/9356648"><img src="/img/wg_thumb2.jpg" /></a>
 	</div>
 	</x:if>
 	<div class="wg-distribution">
